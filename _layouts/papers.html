@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% include wrap.html %}    
+
+    {{ content }}
+
+<div class="container mtb">
+    <div class="row">
+
+    {% assign posts = site.tags.papers %}
+    {% include citation.html %}
+
+    </div>
+</div><! --/container -->
