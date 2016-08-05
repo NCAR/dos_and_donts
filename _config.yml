@@ -7,7 +7,7 @@ description: "Research to improve the fundamental building blocks on which hydro
 
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
-url: "http://yourdomain.com"
+url: "https://ncar.github.io/Toolbox/"
 
 # Build settings
 markdown: kramdown

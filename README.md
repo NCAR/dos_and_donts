@@ -30,7 +30,7 @@ Website contributions
 
 ============
 
-DETAILS FROM THEME DESIGNERS:
+###DETAILS FROM THEME DESIGNERS
 
 Solid. A Bootstrap theme for Jekyll.
 ============
