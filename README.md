@@ -3,27 +3,27 @@ Website contributions
 
 ###Ideas for future changes:
 
-Add NCAR/RAL logo throughout
-Double check that design is okay at different widths (e.g., data, research pages don’t do well when wide, might want to force figures to be a certain size?)
-redo if statements in _layout/project.html
-fix error "ERROR /assets/img/modelchain@2x.png not found."
-change the way contacts are done on project pages (add a mailbox link, or just link to person's webpage)
-add date break with papers
-modify the size of some figures?
-add appropriate links from project to dataset and from datasets to projects
-modify the home page figure (Andy Wood had suggestion)
-not all collaborators have email addresses or pictures, add those
+*   Add NCAR/RAL logo throughout
+*   Double check that design is okay at different widths (e.g., data, research pages don’t do well when wide, might want to force figures to be a certain size?)
+*   redo if statements in _layout/project.html
+*   fix error "ERROR /assets/img/modelchain@2x.png not found."
+*   change the way contacts are done on project pages (add a mailbox link, or just link to person's webpage)
+*   add date break with papers
+*   modify the size of some figures?
+*   add appropriate links from project to dataset and from datasets to projects
+*   modify the home page figure (Andy Wood had suggestion)
+*   not all collaborators have email addresses or pictures, add those
 
 ###Contributors, please consider the following:
 
-tagline by photo, ok?
-website/email address ok?
-photo ok?
-publications to add?  template in _posts/papers/_2000-01-01_template.md (all you need to do is make a new file with your publication and add it to this folder)
-check project pages
-check or add datasets
-dataset descriptions (write or check they are ok)
-collaborators that need to be added/removed?
+*   tagline by photo, ok?
+*   website/email address ok?
+*   photo ok?
+*   publications to add?  template in _posts/papers/_2000-01-01_template.md (all you need to do is make a new file with your publication and add it to this folder)
+*   check project pages
+*   check or add datasets
+*   dataset descriptions (write or check they are ok)
+*   collaborators that need to be added/removed?
 
 
 
