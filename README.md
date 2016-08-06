@@ -5,7 +5,7 @@ Website contributions
 
 *   Add NCAR/RAL logo throughout
 *   Double check that design is okay at different widths (e.g., data, research pages don’t do well when wide, might want to force figures to be a certain size?)
-*   redo if statements in _layout/project.html
+*   redo if statements in _layout/project.html (collects papers for each project)
 *   fix error "ERROR /assets/img/modelchain@2x.png not found."
 *   change the way contacts are done on project pages (add a mailbox link, or just link to person's webpage)
 *   add date break with papers
