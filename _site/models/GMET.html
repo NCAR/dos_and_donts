@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+
+    <title>COMPUTATIONAL HYDROLOGY - GMET</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <!--<link rel="stylesheet" href="/css/main.css">-->
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+    <body>
+        <!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">COMPUTATIONAL HYDROLOGY</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right">
+      <ul class="nav navbar-nav">
+	<li ><a href="/about/">CONTRIBUTORS</a></li>
+        <li ><a href="/projects/">PROJECTS</a></li>
+        <li ><a href="/models/">MODELS</a></li>
+        <li ><a href="/papers/">PAPERS</a></li>
+        <li ><a href="/datasets/">DATASETS</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+
+
+            <div id="blue">
+    <div class="container">
+        <div class="row">
+            <h3>GMET</h3>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /blue -->
+
+<div class="container mt">
+    <div class="row">
+        <div class="col-lg-5 col-lg-offset-1">
+            <div class="spacing"></div>
+
+            <h1 id="new-tools-and-datasets-for-understanding-observational-uncertainty">New Tools and Datasets for Understanding Observational Uncertainty</h1>
+
+<h4 id="the-challenge"><strong>The challenge:</strong></h4>
+<p>Many hydrologic applications require spatial meteorological datasets (gridded observations), but meteorological stations are neither evenly spaced nor are their observations (e.g. precipitation, temperature) always complete and error free.  Previous efforts to create gridded meteorological datasets from observations ignored uncertainties in measurements and in their interpolation across space, which is especially problematic when observations are sparse or terrain is complex.</p>
+
+<h4 id="facing-this-challenge"><strong>Facing this challenge:</strong></h4>
+
+<p>Scientists and engineers in RAL’s Hydrometeorological Applications Program at the National Center for Atmospheric Research are collaborating with the U.S. Army Corps of Engineers, the Bureau of Reclamation, and the University of Washington to generate high-quality, probabilistic gridded meteorological fields that reflect uncertainties in historical meteorological datasets. These datasets are useful for global climate model evaluation, hydrologic model parameter estimation, and hydrologic model data assimilation. For example, during the Mississippi River flood of 1993, two areas in the central U.S. showed heavy precipitation: the flood region and the Gulf coast (top panel in figure).  Precipitation in the north of the domain was more spatially uniform than precipitation along the Gulf coast. Areas with highly spatially variable precipitation measurements will have larger uncertainty when interpolated to a grid.  The ensemble is able to capture these differences as shown in the bottom panel, which displays a measure of spread in the ensemble of precipitation estimates.</p>
+
+<h4 id="scientific-advances"><strong>Scientific advances:</strong></h4>
+
+<p>Development of the Gridded Meteorological Ensemble Tool (GMET) allows for quantification of uncertainty for station-based gridded precipitation and temperature datasets, specifically:</p>
+
+<ul>
+  <li>
+    <p>GMET completes the many steps needed to construct gridded meteorological ensembles: (1) ingests station data (current simulations draw from over 12,000 unique stations), (2) ensures stations are serially complete (rejects records too short to be validated and fills data gaps using well-established methods), (3) interpolates the serially-complete precipitation and temperature time series from station data to estimate the probability of precipitation occurrence and probability distributions of precipitation amounts, and (4) generates ensemble gridded spatial fields using spatially and temporally correlated random fields to sample from estimated distributions generated in the earlier step, which allows for consistent estimates of uncertainty in both space and time.  The probabilistic interpolation approach is detailed in Clark and Slater [2006].</p>
+  </li>
+  <li>
+    <p>GMET has been used to develop a first-of-its-kind ensemble dataset of daily precipitation and temperature at one-eighth degree spatial resolution for the contiguous United States from 1980 to 2012. The 100-member ensemble dataset, described in Newman et al. [2015], compares well with established data products, reflects observational and interpolation uncertainty, and is freely available at: http://dx. doi.org/10.5065/D6TH8JR2.</p>
+  </li>
+  <li>
+    <p>GMET produced ensembles have been used in hydrologic data assimilation (e.g., to evaluate the potential for snow data assimilation to improve seasonal streamflow prediction across the western US) and high-resolution regional climate model evaluation.</p>
+  </li>
+</ul>
+
+<h4 id="moving-forward"><strong>Moving Forward:</strong></h4>
+
+<ul>
+  <li>
+    <p>Augment the GMET tool, for example by adding new data sources (e.g., radar, satellite).</p>
+  </li>
+  <li>
+    <p>Use GMET to further evaluate global climate model projections and examine methodological choices such as station selection criteria, interpolation scheme, spatial resolution, and topographic considerations (e.g., lapse rate choices).</p>
+  </li>
+  <li>
+    <p>Continue to promote ways to incorporate uncertainty estimates as an integrated and formalized component of dataset generation and use.</p>
+  </li>
+  <li>
+    <p>Use GMET to develop ensemble historical meteorological datasets in Alaska and Hawaii.</p>
+  </li>
+  <li>
+    <p>Update the ensemble dataset for the contiguous United States through 2015, yearly updates thereafter.</p>
+  </li>
+</ul>
+
+	    <img src="/assets/img/project/gmet.png" alt="">
+	    
+
+        </div>
+
+	<div class="col-lg-4 col-lg-offset-1">
+            <div class="spacing"></div>
+            <h4>Project Team</h4>
+            <div class="hline"></div>
+            <p>NCAR: Martyn Clark (PI), Andrew Newman, Andy Wood, Ethan Gutmann</p>
+            <p>U.S. Army Corps of Engineers: Jeff Arnold</p>
+            <p>Bureau of Reclamation: Levi Brekke</p>
+            
+            
+            
+            
+            <p>Contact: Andy Newman - anewman@ucar.edu | Julie Vano - jvano@ucar.edu</p>
+        </div>
+
+        <div class="col-lg-4 col-lg-offset-1">
+            <div class="spacing"></div>
+            <h4>Project Sponsors</h4>
+            <div class="hline"></div>
+            <p>U.S. Army Corps of Engineers, Bureau of Reclamation</p>
+	</div>
+
+	<div class="col-lg-4 col-lg-offset-1">
+            <div class="spacing"></div>
+            <h4>More Information At</h4>
+            <div class="hline"></div> 
+	&nbsp
+	<p> Website: &nbsp <a href="www.ral.ucar.edu/projects/toolbox/gmet">www.ral.ucar.edu/projects/toolbox/gmet</a></p> 
+	<p> Factsheets: &nbsp 
+        <a href="/assets/img/project/gmet_1pg.pdf"> 1-Pager</a> &nbsp
+        <a href="/assets/img/project/gmet_factsheet_2016_10.pdf">  2-Pager </a> (same info as this page)</p> 
+
+        <!-- if statements below are not ideal, should find way to add variable into assign--> 
+        
+	
+        
+        
+        
+        
+        
+        
+         <p> Papers: </p> 
+        
+<ul> Newman, A.J., M.P. Clark, J. Craig, B. Nijssen, A.W. Wood, E.D. Gutmann, N. Mizukami, L. Brekke, and J.R. Arnold, 2014: Gridded ensemble precipitation and temperature estimates for the contiguous United States. <i> Journal of Hydrometeorology</i>, 
+	 <b>16</b>, 
+	2481-2500,  
+	 doi:<a href=http://dx.doi.org/10.1175/JHM-D-15-0026.1>10.1175/JHM-D-15-0026.1</a> 
+	</ul>
+&nbsp
+
+<ul> Gangopadhyay, S., M.P. Clark, and B. Rajagopalan, 2005: Statistical downscaling using K-nearest neighbor. <i> Water Resources Research</i>, 
+	 <b>41</b>, 
+	W02024,  
+	 doi:<a href=http://dx.doi.org/10.1029/2004WR003444>10.1029/2004WR003444</a> 
+	</ul>
+&nbsp
+
+
+
+        </div>
+
+    </div><! --/row -->
+</div><! --/container -->
+	 
+<div id="portfoliowrap">
+    <div class="portfolio-centered">
+        <h3>Related Work</h3>
+        <div class="recentitems portfolio">
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/toolbox.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">The Whole</h3>
+                                <a href="/projects/toolbox" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/hydro_model_project.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">hydrologic modeling</h3>
+                                <a href="/projects/hydrologic_modeling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/sharp.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">SHARP</h3>
+                                <a href="/projects/models/streamflow_forecasting" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/storylines.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">storylines</h3>
+                                <a href="/projects/storylines" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/sharp.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">SHARP</h3>
+                                <a href="/projects/models/SHARP" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/icar.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">ICAR</h3>
+                                <a href="/projects/models/quasi-dynamical_downscaling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/gmet.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">GMET</h3>
+                                <a href="/projects/models/parameter_estimation" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/streamflow_routing.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">streamflow routing</h3>
+                                <a href="/projects/streamflow_routing" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/oconus.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">OCONUS</h3>
+                                <a href="/projects/OCONUS" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/mpr-flex.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">MPR-flex</h3>
+                                <a href="/projects/mprflex" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+        </div><!-- portfolio -->
+    </div><!-- portfolio container -->
+</div><!--/Portfoliowrap -->
+
+
+
+        <div id="footerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>address</h4>
+                <div class="hline-w"></div>
+                <p>
+                    
+                        3450 Mitchell Ln <br>
+                    
+                        Boulder, Colorado 80301 <br>
+                    
+                        United States <br>
+                    
+                </p>
+            </div>
+        </div><! --/row -->
+    </div><! --/container -->
+</div><! --/footerwrap -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/retina-1.1.0.js"></script>
+<script src="/assets/js/jquery.hoverdir.js"></script>
+<script src="/assets/js/jquery.hoverex.min.js"></script>
+<script src="/assets/js/jquery.prettyPhoto.js"></script>
+<script src="/assets/js/jquery.isotope.min.js"></script>
+<script src="/assets/js/custom.js"></script>
+
+<script>
+// Portfolio
+(function($) {
+	"use strict";
+	var $container = $('.portfolio'),
+		$items = $container.find('.portfolio-item'),
+		portfolioLayout = 'fitRows';
+		
+		if( $container.hasClass('portfolio-centered') ) {
+			portfolioLayout = 'masonry';
+		}
+				
+		$container.isotope({
+			filter: '*',
+			animationEngine: 'best-available',
+			layoutMode: portfolioLayout,
+			animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		},
+		masonry: {
+		}
+		}, refreshWaypoints());
+		
+		function refreshWaypoints() {
+			setTimeout(function() {
+			}, 1000);   
+		}
+				
+		$('nav.portfolio-filter ul a').on('click', function() {
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector }, refreshWaypoints());
+				$('nav.portfolio-filter ul a').removeClass('active');
+				$(this).addClass('active');
+				return false;
+		});
+		
+		function getColumnNumber() { 
+			var winWidth = $(window).width(), 
+			columnNumber = 1;
+		
+			if (winWidth > 1200) {
+				columnNumber = 5;
+			} else if (winWidth > 950) {
+				columnNumber = 4;
+			} else if (winWidth > 600) {
+				columnNumber = 3;
+			} else if (winWidth > 400) {
+				columnNumber = 2;
+			} else if (winWidth > 250) {
+				columnNumber = 1;
+			}
+				return columnNumber;
+			}       
+			
+			function setColumns() {
+				var winWidth = $(window).width(), 
+				columnNumber = getColumnNumber(), 
+				itemWidth = Math.floor(winWidth / columnNumber);
+				
+				$container.find('.portfolio-item').each(function() { 
+					$(this).css( { 
+					width : itemWidth + 'px' 
+				});
+			});
+		}
+		
+		function setPortfolio() { 
+			setColumns();
+			$container.isotope('reLayout');
+		}
+			
+		$container.imagesLoaded(function () { 
+			setPortfolio();
+		});
+		
+		$(window).on('resize', function () { 
+		setPortfolio();          
+	});
+})(jQuery);
+</script>
+    </body>
+</html>

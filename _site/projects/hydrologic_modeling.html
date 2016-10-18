@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+
+    <title>COMPUTATIONAL HYDROLOGY - hydrologic modeling</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <!--<link rel="stylesheet" href="/css/main.css">-->
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+    <body>
+        <!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">COMPUTATIONAL HYDROLOGY</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right">
+      <ul class="nav navbar-nav">
+	<li ><a href="/about/">CONTRIBUTORS</a></li>
+        <li ><a href="/projects/">PROJECTS</a></li>
+        <li ><a href="/models/">MODELS</a></li>
+        <li ><a href="/papers/">PAPERS</a></li>
+        <li ><a href="/datasets/">DATASETS</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+
+
+            <div id="blue">
+    <div class="container">
+        <div class="row">
+            <h3>hydrologic modeling</h3>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /blue -->
+
+<div class="container mt">
+    <div class="row">
+        <div class="col-lg-5 col-lg-offset-1">
+            <div class="spacing"></div>
+
+            <h1 id="improving-hydrologic-modeling-for-climate-impact-assessments">Improving Hydrologic Modeling for Climate Impact Assessments</h1>
+
+<h4 id="the-challenge"><strong>The challenge:</strong></h4>
+
+<p>Management decisions about our nation’s water resources are made against a backdrop of uncertainty. Uncertainty about water supply and demand affects both short-range operational decisions and long-range planning. Risk-based operations and planning methods require realistic descriptions of uncertainty, yet an important source of uncertainty that has so far been neglected in climate impact assessments originates with hydrologic models. Hydrologic models can produce a wide range of predictions for the same events, even when forced with identical meteorology.</p>
+
+<h4 id="facing-this-challenge"><strong>Facing this challenge:</strong></h4>
+
+<p>Scientists and engineers in RAL’s Hydrometeorological Applications Program at the National Center for Atmospheric Research are collaborating with the U.S. Army Corps of Engineers, the Bureau of Reclamation, and the University of Washington to develop a unified hydrologic modeling approach, SUMMA (the Structure for Unifying Multiple Modeling Alternatives), that is built on a common set of governing equations and a common numerical solver. The SUMMA framework can be used to systematically characterize hydrologic model uncertainty through exploring modeling decisions with controlled manipulations of model configurations and parameters. The resulting, large ensembles reveal the underlying model uncertainty and thus improve the probabilistic characterization of risk. By using a common modeling core, the overhead associated with the creation of large model ensembles is significantly reduced, which is a major departure from current “small ensemble” methods. SUMMA source code and test cases are freely available at https://www.ral.ucar.edu/projects/summa.</p>
+
+<h4 id="scientific-advances"><strong>Scientific advances:</strong></h4>
+
+<ul>
+  <li>
+    <p><em>Process flexibility.</em> SUMMA explicitly simulates dominant biophysical and hydrologic processes, from treetops to bedrock, and from the ridgetop to the stream, providing multiple options for how individual processes are simulated. SUMMA also allows for extensive flexibility to experiment with different model parameter values.</p>
+  </li>
+  <li>
+    <p><em>Spatial flexibility.</em> SUMMA includes capabilities to easily experiment with different representations of spatial variability and hydrologic connectivity, including different spatial resolutions, different spatial configurations (e.g., grids and hydrologic response units), and different representations of how water moves laterally.</p>
+  </li>
+  <li>
+    <p><em>Numerical flexibility.</em> To generalize approaches from multiple models, SUMMA separates the representation of physical processes from the numerical solution. This simplifies incorporating different modeling approaches, and, importantly, enables experimenting with different numerical solvers.</p>
+  </li>
+</ul>
+
+<h4 id="moving-forward"><strong>Moving Forward:</strong></h4>
+
+<ul>
+  <li>
+    <p>Current work is focused on increasing the technical readiness level of SUMMA, to support large-ensemble continental-domain model applications.</p>
+  </li>
+  <li>
+    <p>SUMMA is being rigorously tested in research watersheds, and will be enhanced to enable accurate model simulations of dominant hydrologic processes in different environments, including glaciers and permafrost in Alaska and volcanic geology, intense rainfall, and high rates of evapotranspiration in Hawaii.</p>
+  </li>
+  <li>
+    <p>SUMMA will provide the foundation for future hydrologic scenarios for the next generation of climate impacts assessments.  This effort will carefully assess underlying model uncertainty and provide the water resources community with a manageable subset of quantitative hydrologic storylines to support water resources planning efforts.</p>
+  </li>
+</ul>
+
+	    <img src="/assets/img/project/summa.png" alt="">
+	    
+
+        </div>
+
+	<div class="col-lg-4 col-lg-offset-1">
+            <div class="spacing"></div>
+            <h4>Project Team</h4>
+            <div class="hline"></div>
+            <p>NCAR: Martyn Clark (PI), Grey Nearing, Andy Newman, Naoki Mizukami, Nans Addor, Andy Wood, Ethan Gutmann</p>
+            <p>University of Washington: Bart Nijssen, Jessica Lundquist, Michael Ou</p>
+            <p>U.S. Army Corps of Engineers: Jeff Arnold</p>
+            <p>Bureau of Reclamation: Levi Brekke</p>
+            
+            
+            
+            <p>Contact: Martyn Clark - mclark@ucar.edu | Julie Vano – jvano@ucar.edu</p>
+        </div>
+
+        <div class="col-lg-4 col-lg-offset-1">
+            <div class="spacing"></div>
+            <h4>Project Sponsors</h4>
+            <div class="hline"></div>
+            <p>National Science Foundation, U.S. Army Corps of Engineers, Bureau of Reclamation, NOAA, NASA (check)</p>
+	</div>
+
+	<div class="col-lg-4 col-lg-offset-1">
+            <div class="spacing"></div>
+            <h4>More Information At</h4>
+            <div class="hline"></div> 
+	&nbsp
+	<p> Website: &nbsp <a href="https://www.ral.ucar.edu/projects/summa">https://www.ral.ucar.edu/projects/summa</a></p> 
+	<p> Factsheets: &nbsp 
+        <a href="/assets/img/project/comingsoon.pdf"> 1-Pager</a> &nbsp
+        <a href="/assets/img/project/summa_factsheet_2016_10.pdf">  2-Pager </a> (same info as this page)</p> 
+
+        <!-- if statements below are not ideal, should find way to add variable into assign--> 
+        
+	
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+        </div>
+
+    </div><! --/row -->
+</div><! --/container -->
+	 
+<div id="portfoliowrap">
+    <div class="portfolio-centered">
+        <h3>Related Work</h3>
+        <div class="recentitems portfolio">
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/toolbox.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">The Whole</h3>
+                                <a href="/projects/toolbox" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/hydro_model_project.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">hydrologic modeling</h3>
+                                <a href="/projects/hydrologic_modeling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/sharp.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">SHARP</h3>
+                                <a href="/projects/models/streamflow_forecasting" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/storylines.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">storylines</h3>
+                                <a href="/projects/storylines" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/sharp.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">SHARP</h3>
+                                <a href="/projects/models/SHARP" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/icar.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">ICAR</h3>
+                                <a href="/projects/models/quasi-dynamical_downscaling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/gmet.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">GMET</h3>
+                                <a href="/projects/models/parameter_estimation" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/streamflow_routing.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">streamflow routing</h3>
+                                <a href="/projects/streamflow_routing" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/oconus.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">OCONUS</h3>
+                                <a href="/projects/OCONUS" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/mpr-flex.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">MPR-flex</h3>
+                                <a href="/projects/mprflex" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+        </div><!-- portfolio -->
+    </div><!-- portfolio container -->
+</div><!--/Portfoliowrap -->
+
+
+
+        <div id="footerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>address</h4>
+                <div class="hline-w"></div>
+                <p>
+                    
+                        3450 Mitchell Ln <br>
+                    
+                        Boulder, Colorado 80301 <br>
+                    
+                        United States <br>
+                    
+                </p>
+            </div>
+        </div><! --/row -->
+    </div><! --/container -->
+</div><! --/footerwrap -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/retina-1.1.0.js"></script>
+<script src="/assets/js/jquery.hoverdir.js"></script>
+<script src="/assets/js/jquery.hoverex.min.js"></script>
+<script src="/assets/js/jquery.prettyPhoto.js"></script>
+<script src="/assets/js/jquery.isotope.min.js"></script>
+<script src="/assets/js/custom.js"></script>
+
+<script>
+// Portfolio
+(function($) {
+	"use strict";
+	var $container = $('.portfolio'),
+		$items = $container.find('.portfolio-item'),
+		portfolioLayout = 'fitRows';
+		
+		if( $container.hasClass('portfolio-centered') ) {
+			portfolioLayout = 'masonry';
+		}
+				
+		$container.isotope({
+			filter: '*',
+			animationEngine: 'best-available',
+			layoutMode: portfolioLayout,
+			animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		},
+		masonry: {
+		}
+		}, refreshWaypoints());
+		
+		function refreshWaypoints() {
+			setTimeout(function() {
+			}, 1000);   
+		}
+				
+		$('nav.portfolio-filter ul a').on('click', function() {
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector }, refreshWaypoints());
+				$('nav.portfolio-filter ul a').removeClass('active');
+				$(this).addClass('active');
+				return false;
+		});
+		
+		function getColumnNumber() { 
+			var winWidth = $(window).width(), 
+			columnNumber = 1;
+		
+			if (winWidth > 1200) {
+				columnNumber = 5;
+			} else if (winWidth > 950) {
+				columnNumber = 4;
+			} else if (winWidth > 600) {
+				columnNumber = 3;
+			} else if (winWidth > 400) {
+				columnNumber = 2;
+			} else if (winWidth > 250) {
+				columnNumber = 1;
+			}
+				return columnNumber;
+			}       
+			
+			function setColumns() {
+				var winWidth = $(window).width(), 
+				columnNumber = getColumnNumber(), 
+				itemWidth = Math.floor(winWidth / columnNumber);
+				
+				$container.find('.portfolio-item').each(function() { 
+					$(this).css( { 
+					width : itemWidth + 'px' 
+				});
+			});
+		}
+		
+		function setPortfolio() { 
+			setColumns();
+			$container.isotope('reLayout');
+		}
+			
+		$container.imagesLoaded(function () { 
+			setPortfolio();
+		});
+		
+		$(window).on('resize', function () { 
+		setPortfolio();          
+	});
+})(jQuery);
+</script>
+    </body>
+</html>

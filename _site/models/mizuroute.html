@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+
+    <title>COMPUTATIONAL HYDROLOGY - mizuRoute</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <!--<link rel="stylesheet" href="/css/main.css">-->
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+    <body>
+        <!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">COMPUTATIONAL HYDROLOGY</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right">
+      <ul class="nav navbar-nav">
+	<li ><a href="/about/">CONTRIBUTORS</a></li>
+        <li ><a href="/projects/">PROJECTS</a></li>
+        <li ><a href="/models/">MODELS</a></li>
+        <li ><a href="/papers/">PAPERS</a></li>
+        <li ><a href="/datasets/">DATASETS</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+
+
+            <div id="blue">
+    <div class="container">
+        <div class="row">
+            <h3>mizuRoute</h3>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /blue -->
+
+<div class="container mt">
+    <div class="row">
+        <div class="col-lg-5 col-lg-offset-1">
+            <div class="spacing"></div>
+
+            <h1 id="routing-streamflow-to-places-important-for-infrastructure-design">Routing Streamflow to Places Important for Infrastructure Design</h1>
+
+<h4 id="the-challenge"><strong>The challenge:</strong></h4>
+
+<p>Hydrologic models generate runoff that is spatially distributed (e.g., across a lattice of grid cells), which then needs to be routed through the channel network to produce streamflow at specific locations. Existing continental domain portrayals of climate impacts commonly evaluate streamflow changes on a grid-based river network, and typically use a single routing scheme and single parameter set to generate flow at a limited number of gauge points. Additionally, different routing schemes work better in different locations (e.g., relatively flat locations benefit from more detailed dynamic simulations than places with a greater elevation gradient).</p>
+
+<h4 id="facing-this-challenge"><strong>Facing this challenge:</strong></h4>
+
+<p>Scientists and engineers in RAL’s Hydrometeorological Applications Program at the National Center for Atmospheric Research are collaborating with the U.S. Army Corps of Engineers, the Bureau of Reclamation, and the University of Washington to build a multi-method, continental-domain routing model that efficiently routes streamflow from any distributed hydrologic model. This software package, called mizuRoute (in Japanese “mizu” means water), is designed to quickly process large ensembles of future runoff at each time step to any location within the river network (illustrated in figure), facilitating spatial and temporal analysis that can be easily modified to address specific user needs.</p>
+
+<h4 id="scientific-advances"><strong>Scientific advances:</strong></h4>
+
+<ul>
+  <li>
+    <p>mizuRoute is a stand-alone software package that can be used with output from any spatially distributed hydrologic model. It can be easily run in parallel and is well-suited for running large-ensembles.</p>
+  </li>
+  <li>
+    <p>mizuRoute can represent both a grid-type or vector-type river network. One benefit of the vector river network is accurate representation of river length and contributing area, leading to more accurate streamflow simulations.</p>
+  </li>
+  <li>
+    <p>mizuRoute can route streamflow for headwater basins, continental-wide river systems, and any desired location in the entire river network (not just pre-designated gauge points).   It currently produces values at 54,000 river segments across the contiguous United States based on the USGS Geospatial Fabric dataset, providing a more efficient and physically realistic alternative to gridded representations of the channel network.</p>
+  </li>
+  <li>
+    <p>mizuRoute is developed in a modular framework. Therefore, multiple routing schemes can be implemented. mizuRoute currently has two routing schemes, one that includes more dynamics (kinematic wave tracking) and another that runs faster by using an impulse response function (unit hydrograph).</p>
+  </li>
+</ul>
+
+<h4 id="moving-forward"><strong>Moving Forward:</strong></h4>
+
+<p>These scientific advances provide opportunities to:</p>
+
+<ul>
+  <li>
+    <p>Simulate streamflow for hydrologic model evaluation, calibration, and future climate projections at locations most important to infrastructure design and operations.</p>
+  </li>
+  <li>
+    <p>Development is underway to add elements of water mass tracking, which would allow mizuRoute to be used in water quality evaluation (streamflow temperature, chemical constituents).</p>
+  </li>
+  <li>
+    <p>Implementation of fuller dynamical routing, which would be more suitable for flat areas. To this end, a user could select the most appropriate routing scheme, depending on the location (e.g., elevation gradients) and compute times, or multiple schemes to assess routing model uncertainty.</p>
+  </li>
+</ul>
+
+	    <img src="/assets/img/project/mizuRoute.png" alt="">
+	    
+
+        </div>
+
+	<div class="col-lg-4 col-lg-offset-1">
+            <div class="spacing"></div>
+            <h4>Project Team</h4>
+            <div class="hline"></div>
+            <p>NCAR: Martyn Clark (PI), Naoki Mizukami</p>
+            <p>University of Washington: Bart Nijssen</p>
+            
+            
+            
+            
+            
+            <p>Contact:  Martyn Clark - mclark@ucar.edu | Julie Vano - jvano@ucar.edu</p>
+        </div>
+
+        <div class="col-lg-4 col-lg-offset-1">
+            <div class="spacing"></div>
+            <h4>Project Sponsors</h4>
+            <div class="hline"></div>
+            <p>U.S. Army Corps of Engineers, Bureau of Reclamation</p>
+	</div>
+
+	<div class="col-lg-4 col-lg-offset-1">
+            <div class="spacing"></div>
+            <h4>More Information At</h4>
+            <div class="hline"></div> 
+	&nbsp
+	<p> Website: &nbsp <a href="www.ral.ucar.edu/projects/toolbox/mizuRoute">www.ral.ucar.edu/projects/toolbox/mizuRoute</a></p> 
+	<p> Factsheets: &nbsp 
+        <a href="/assets/img/project/mizuRoute_1pg.pdf"> 1-Pager</a> &nbsp
+        <a href="/assets/img/project/mizuRoute_factsheet_2016_10.pdf">  2-Pager </a> (same info as this page)</p> 
+
+        <!-- if statements below are not ideal, should find way to add variable into assign--> 
+        
+	
+        
+        
+        
+        
+        
+        
+         <p> Papers: </p> 
+        
+<ul> Mizukami, N., M.P. Clark, K. Sampson, B. Nijssen, Y. Mao, H. McMillan, R.J. Viger, S.L. Markstrom, L.E. Hay, R. Woods, J.R. Arnold, and L.D. Brekke, 2016: mizuRoute version 1: a river network routing tool for a continental domain water resources applications. <i> Geoscientific Model Development</i>, 
+	 <b>9</b>, 
+	2223-2238,  
+	 doi:<a href=http://dx.doi.org/10.5194/gmd-9-2223-2016>10.5194/gmd-9-2223-2016</a> 
+	</ul>
+&nbsp
+
+
+
+        </div>
+
+    </div><! --/row -->
+</div><! --/container -->
+	 
+<div id="portfoliowrap">
+    <div class="portfolio-centered">
+        <h3>Related Work</h3>
+        <div class="recentitems portfolio">
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/toolbox.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">The Whole</h3>
+                                <a href="/projects/toolbox" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/hydro_model_project.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">hydrologic modeling</h3>
+                                <a href="/projects/hydrologic_modeling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/sharp.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">SHARP</h3>
+                                <a href="/projects/models/streamflow_forecasting" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/storylines.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">storylines</h3>
+                                <a href="/projects/storylines" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/sharp.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">SHARP</h3>
+                                <a href="/projects/models/SHARP" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/icar.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">ICAR</h3>
+                                <a href="/projects/models/quasi-dynamical_downscaling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/gmet.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">GMET</h3>
+                                <a href="/projects/models/parameter_estimation" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/streamflow_routing.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">streamflow routing</h3>
+                                <a href="/projects/streamflow_routing" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/oconus.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">OCONUS</h3>
+                                <a href="/projects/OCONUS" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/mpr-flex.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">MPR-flex</h3>
+                                <a href="/projects/mprflex" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+        </div><!-- portfolio -->
+    </div><!-- portfolio container -->
+</div><!--/Portfoliowrap -->
+
+
+
+        <div id="footerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>address</h4>
+                <div class="hline-w"></div>
+                <p>
+                    
+                        3450 Mitchell Ln <br>
+                    
+                        Boulder, Colorado 80301 <br>
+                    
+                        United States <br>
+                    
+                </p>
+            </div>
+        </div><! --/row -->
+    </div><! --/container -->
+</div><! --/footerwrap -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/retina-1.1.0.js"></script>
+<script src="/assets/js/jquery.hoverdir.js"></script>
+<script src="/assets/js/jquery.hoverex.min.js"></script>
+<script src="/assets/js/jquery.prettyPhoto.js"></script>
+<script src="/assets/js/jquery.isotope.min.js"></script>
+<script src="/assets/js/custom.js"></script>
+
+<script>
+// Portfolio
+(function($) {
+	"use strict";
+	var $container = $('.portfolio'),
+		$items = $container.find('.portfolio-item'),
+		portfolioLayout = 'fitRows';
+		
+		if( $container.hasClass('portfolio-centered') ) {
+			portfolioLayout = 'masonry';
+		}
+				
+		$container.isotope({
+			filter: '*',
+			animationEngine: 'best-available',
+			layoutMode: portfolioLayout,
+			animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		},
+		masonry: {
+		}
+		}, refreshWaypoints());
+		
+		function refreshWaypoints() {
+			setTimeout(function() {
+			}, 1000);   
+		}
+				
+		$('nav.portfolio-filter ul a').on('click', function() {
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector }, refreshWaypoints());
+				$('nav.portfolio-filter ul a').removeClass('active');
+				$(this).addClass('active');
+				return false;
+		});
+		
+		function getColumnNumber() { 
+			var winWidth = $(window).width(), 
+			columnNumber = 1;
+		
+			if (winWidth > 1200) {
+				columnNumber = 5;
+			} else if (winWidth > 950) {
+				columnNumber = 4;
+			} else if (winWidth > 600) {
+				columnNumber = 3;
+			} else if (winWidth > 400) {
+				columnNumber = 2;
+			} else if (winWidth > 250) {
+				columnNumber = 1;
+			}
+				return columnNumber;
+			}       
+			
+			function setColumns() {
+				var winWidth = $(window).width(), 
+				columnNumber = getColumnNumber(), 
+				itemWidth = Math.floor(winWidth / columnNumber);
+				
+				$container.find('.portfolio-item').each(function() { 
+					$(this).css( { 
+					width : itemWidth + 'px' 
+				});
+			});
+		}
+		
+		function setPortfolio() { 
+			setColumns();
+			$container.isotope('reLayout');
+		}
+			
+		$container.imagesLoaded(function () { 
+			setPortfolio();
+		});
+		
+		$(window).on('resize', function () { 
+		setPortfolio();          
+	});
+})(jQuery);
+</script>
+    </body>
+</html>

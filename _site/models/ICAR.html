@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+
+    <title>COMPUTATIONAL HYDROLOGY - ICAR</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <!--<link rel="stylesheet" href="/css/main.css">-->
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+    <body>
+        <!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">COMPUTATIONAL HYDROLOGY</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right">
+      <ul class="nav navbar-nav">
+	<li ><a href="/about/">CONTRIBUTORS</a></li>
+        <li ><a href="/projects/">PROJECTS</a></li>
+        <li ><a href="/models/">MODELS</a></li>
+        <li ><a href="/papers/">PAPERS</a></li>
+        <li ><a href="/datasets/">DATASETS</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+
+
+            <div id="blue">
+    <div class="container">
+        <div class="row">
+            <h3>ICAR</h3>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /blue -->
+
+<div class="container mt">
+    <div class="row">
+        <div class="col-lg-5 col-lg-offset-1">
+            <div class="spacing"></div>
+
+            <h1 id="advances-in-generating-locally-relevant-climate-change-information">Advances in Generating Locally Relevant Climate Change Information</h1>
+
+<h4 id="the-challenge"><strong>The challenge:</strong></h4>
+
+<p>While climate change is occurring globally, changes are felt locally.  However, global climate models do not produce information at locally relevant scales.  Therefore, water managers and planners use “downscaling” methods to convert global climate data to decision-relevant spatial scales.</p>
+
+<p>One of the more reliable ways to perform this downscaling is through the use of high-resolution regional climate models; however, such models are too computationally expensive to be run for long time periods.  As a result, water managers often rely on simpler, statistical methods to downscale climate data. Such statistical methods however do not include atmospheric dynamics, and, therefore, may not represent local climate changes as well.</p>
+
+<h4 id="facing-this-challenge"><strong>Facing this challenge:</strong></h4>
+
+<p>Scientists and engineers in RAL’s Hydrometeorological Applications Program at the National Center for Atmospheric Research are collaborating with the U.S. Army Corps of Engineers, the Bureau of Reclamation, and the University of Bergen to develop a more computationally efficient form of regional climate modeling, the Intermediate Complexity Atmospheric Research model (ICAR).  ICAR combines large-scale atmospheric circulation from climate models with Linear Mountain Wave theory, a mathematical solution for determining the effect of mountains on atmospheric winds, to generate wind fields and calculate the motion of air parcels within the atmosphere. Then ICAR performs detailed full-physics calculations relating three-dimensional water vapor and temperature to the formation of clouds, rain, and snow.  The resulting precipitation predictions are similar to those predicted by a full-complexity regional climate model (WRF), and to the PRISM observed dataset (illustrated in the figure). The source code for ICAR, along with a growing library of documentation, is freely available at https://www.github.com/NCAR/icar.</p>
+
+<h4 id="scientific-advances"><strong>Scientific advances:</strong></h4>
+
+<p>ICAR provides a new way of generating local climate information that captures local atmospheric dynamics and is computationally efficient, freeing water managers and planners from needing to choose between statistical and dynamical downscaling methods.</p>
+
+<ul>
+  <li>
+    <p><em>Physical processes.</em> ICAR provides a method of downscaling that is derived from physical principles, and incorporates some of the most advanced cloud and precipitation calculations in the scientific literature.</p>
+  </li>
+  <li>
+    <p><em>Computational efficiency.</em> ICAR simulations can be performed 100 to 1000 times faster than a comparable simulation with a traditional regional climate model.</p>
+  </li>
+  <li>
+    <p><em>Skill in current climate.</em> ICAR’s representation of the precipitation that forms mountain snowpack, which is of great importance to those managing water resources in the western U.S., is excellent. ICAR explains 85-95% of the variability represented in a much more complex regional climate model, and is highly correlated with observed precipitation.</p>
+  </li>
+  <li>
+    <p><em>Flexibility.</em> ICAR has been designed to use a variety of model inputs and can easily be used to evaluate the influence of different physical assumptions on the downscaling process.</p>
+  </li>
+</ul>
+
+<h4 id="moving-forward"><strong>Moving Forward:</strong></h4>
+
+<ul>
+  <li>
+    <p>Current work is focused on improving the skill and physical process representation of ICAR, particularly for convective precipitation and land surface feedbacks.</p>
+  </li>
+  <li>
+    <p>ICAR is being used to generate downscaled climate datasets for the United States, including Alaska and Hawaii.</p>
+  </li>
+  <li>
+    <p>ICAR is being evaluated in a variety of environments, including tests in the Alps, Norway, the Himalayas, and Chile.</p>
+  </li>
+</ul>
+
+	    <img src="/assets/img/project/icar.png" alt="">
+	    
+
+        </div>
+
+	<div class="col-lg-4 col-lg-offset-1">
+            <div class="spacing"></div>
+            <h4>Project Team</h4>
+            <div class="hline"></div>
+            <p>NCAR: Ethan Gutmann (PI), Martyn Clark, Trude Eidhammer, Roy Rasmussen</p>
+            <p>Uni Research (Bergen, Norway):  Idar Bartstad</p>
+            <p>U.S. Army Corps of Engineers: Jeff Arnold</p>
+            <p>Bureau of Reclamation: Levi Brekke</p>
+            
+            
+            
+            <p>Contact: Ethan Gutmann- gutmann@ucar.edu | Julie Vano - jvano@ucar.edu</p>
+        </div>
+
+        <div class="col-lg-4 col-lg-offset-1">
+            <div class="spacing"></div>
+            <h4>Project Sponsors</h4>
+            <div class="hline"></div>
+            <p>U.S. Army Corps of Engineers, Bureau of Reclamation, National Science Foundation (check)</p>
+	</div>
+
+	<div class="col-lg-4 col-lg-offset-1">
+            <div class="spacing"></div>
+            <h4>More Information At</h4>
+            <div class="hline"></div> 
+	&nbsp
+	<p> Website: &nbsp <a href="https://www.ral.ucar.edu/projects/icar">https://www.ral.ucar.edu/projects/icar</a></p> 
+	<p> Factsheets: &nbsp 
+        <a href="/assets/img/project/comingsoon.pdf"> 1-Pager</a> &nbsp
+        <a href="/assets/img/project/icar_factsheet_2016_10.pdf">  2-Pager </a> (same info as this page)</p> 
+
+        <!-- if statements below are not ideal, should find way to add variable into assign--> 
+        
+	
+        
+        
+        
+        
+        
+        
+         <p> Papers: </p> 
+        
+<ul> Gutmann, E., I. Barstad, M.P. Clark, J. Arnold, and R. Rasmussen, 2016: The Intermediate Complexity Atmospheric Research Model. <i> Journal of Hydrometeorology</i>, 
+	 <b>17</b>, 
+	957–973,  
+	 doi:<a href=http://dx.doi.org/10.1175/JHM-D-15-0155.1>10.1175/JHM-D-15-0155.1</a> 
+	</ul>
+&nbsp
+
+<ul> Gutmann, E., T. Pruitt, M.P. Clark, L. Brekke, J.R. Arnold, D.A. Raff, and R.M. Rasmussen, 2014: An intercomparison of statistical downscaling methods used for water resource assessments in the United States. <i> Water Resources Research</i>, 
+	 <b>50</b>, 
+	7167–7186,  
+	 doi:<a href=http://dx.doi.org/10.1002/2014WR015559>10.1002/2014WR015559</a> 
+	</ul>
+&nbsp
+
+<ul> Gutmann, E.D., R.M. Rasmussen, C. Liu, K. Ikeda, D.J. Gochis, M.P. Clark, J. Dudhia, and G. Thompson, 2012: A Comparison of Statistical and Dynamical Downscaling of Winter Precipitation over Complex Terrain. <i> Journal of Climate</i>, 
+	 <b>25</b>, 
+	262–281,  
+	 doi:<a href=http://dx.doi.org/10.1175/2011JCLI4109.1>10.1175/2011JCLI4109.1</a> 
+	</ul>
+&nbsp
+
+<ul> Barstad, I., and S. Gronas, 2006: Dynamical structures for southwesterly airflow over southern Norway: the role of dissipation. <i> Tellus Series a-Dynamic Meteorology and Oceanography</i>, 
+	 <b>58</b>, 
+	2-18,  
+	 doi:<a href=http://dx.doi.org/doi:10.1111/j.1600- 0870.2006.00152.x>doi:10.1111/j.1600- 0870.2006.00152.x</a> 
+	</ul>
+&nbsp
+
+
+
+        </div>
+
+    </div><! --/row -->
+</div><! --/container -->
+	 
+<div id="portfoliowrap">
+    <div class="portfolio-centered">
+        <h3>Related Work</h3>
+        <div class="recentitems portfolio">
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/toolbox.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">The Whole</h3>
+                                <a href="/projects/toolbox" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/hydro_model_project.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">hydrologic modeling</h3>
+                                <a href="/projects/hydrologic_modeling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/sharp.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">SHARP</h3>
+                                <a href="/projects/models/streamflow_forecasting" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/storylines.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">storylines</h3>
+                                <a href="/projects/storylines" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/sharp.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">SHARP</h3>
+                                <a href="/projects/models/SHARP" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/icar.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">ICAR</h3>
+                                <a href="/projects/models/quasi-dynamical_downscaling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/gmet.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">GMET</h3>
+                                <a href="/projects/models/parameter_estimation" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/streamflow_routing.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">streamflow routing</h3>
+                                <a href="/projects/streamflow_routing" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/oconus.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">OCONUS</h3>
+                                <a href="/projects/OCONUS" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/mpr-flex.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">MPR-flex</h3>
+                                <a href="/projects/mprflex" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->		
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+        </div><!-- portfolio -->
+    </div><!-- portfolio container -->
+</div><!--/Portfoliowrap -->
+
+
+
+        <div id="footerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>address</h4>
+                <div class="hline-w"></div>
+                <p>
+                    
+                        3450 Mitchell Ln <br>
+                    
+                        Boulder, Colorado 80301 <br>
+                    
+                        United States <br>
+                    
+                </p>
+            </div>
+        </div><! --/row -->
+    </div><! --/container -->
+</div><! --/footerwrap -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/retina-1.1.0.js"></script>
+<script src="/assets/js/jquery.hoverdir.js"></script>
+<script src="/assets/js/jquery.hoverex.min.js"></script>
+<script src="/assets/js/jquery.prettyPhoto.js"></script>
+<script src="/assets/js/jquery.isotope.min.js"></script>
+<script src="/assets/js/custom.js"></script>
+
+<script>
+// Portfolio
+(function($) {
+	"use strict";
+	var $container = $('.portfolio'),
+		$items = $container.find('.portfolio-item'),
+		portfolioLayout = 'fitRows';
+		
+		if( $container.hasClass('portfolio-centered') ) {
+			portfolioLayout = 'masonry';
+		}
+				
+		$container.isotope({
+			filter: '*',
+			animationEngine: 'best-available',
+			layoutMode: portfolioLayout,
+			animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		},
+		masonry: {
+		}
+		}, refreshWaypoints());
+		
+		function refreshWaypoints() {
+			setTimeout(function() {
+			}, 1000);   
+		}
+				
+		$('nav.portfolio-filter ul a').on('click', function() {
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector }, refreshWaypoints());
+				$('nav.portfolio-filter ul a').removeClass('active');
+				$(this).addClass('active');
+				return false;
+		});
+		
+		function getColumnNumber() { 
+			var winWidth = $(window).width(), 
+			columnNumber = 1;
+		
+			if (winWidth > 1200) {
+				columnNumber = 5;
+			} else if (winWidth > 950) {
+				columnNumber = 4;
+			} else if (winWidth > 600) {
+				columnNumber = 3;
+			} else if (winWidth > 400) {
+				columnNumber = 2;
+			} else if (winWidth > 250) {
+				columnNumber = 1;
+			}
+				return columnNumber;
+			}       
+			
+			function setColumns() {
+				var winWidth = $(window).width(), 
+				columnNumber = getColumnNumber(), 
+				itemWidth = Math.floor(winWidth / columnNumber);
+				
+				$container.find('.portfolio-item').each(function() { 
+					$(this).css( { 
+					width : itemWidth + 'px' 
+				});
+			});
+		}
+		
+		function setPortfolio() { 
+			setColumns();
+			$container.isotope('reLayout');
+		}
+			
+		$container.imagesLoaded(function () { 
+			setPortfolio();
+		});
+		
+		$(window).on('resize', function () { 
+		setPortfolio();          
+	});
+})(jQuery);
+</script>
+    </body>
+</html>

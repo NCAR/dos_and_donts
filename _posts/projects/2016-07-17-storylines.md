@@ -7,7 +7,7 @@ categories:
 img: storylines.jpg
 img2: storylines.png
 factsheet1: comingsoon.pdf
-factsheet2: storylines_2pgr.pdf
+factsheet2: storylines_factsheet_2016_10.pdf
 thumb: storylines.jpg
 sponsors: U.S. Army Corps of Engineers, Bureau of Reclamation
 website: www.ral.ucar.edu/projects/toolbox/storylines
