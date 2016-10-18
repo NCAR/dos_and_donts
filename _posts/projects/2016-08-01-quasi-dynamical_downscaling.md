@@ -4,7 +4,6 @@ title:  "ICAR"
 date:   2016-08-01 16:55:00
 categories:
 - projects
-- models
 img: icar.jpg
 img2: icar.png
 factsheet1: comingsoon.pdf
@@ -17,7 +16,7 @@ teamline2: "Uni Research (Bergen, Norway):  Idar Bartstad"
 teamline3: "U.S. Army Corps of Engineers: Jeff Arnold"
 teamline4: "Bureau of Reclamation: Levi Brekke"
 contacts: "Contact: Ethan Gutmann- gutmann@ucar.edu | Julie Vano - jvano@ucar.edu"
-tags: [models, projects]
+tags: [projects]
 ---
 
 # Advances in Generating Locally Relevant Climate Change Information

@@ -16,7 +16,7 @@ teamline2: "University of Washington: Bart Nijssen, Jessica Lundquist, Michael O
 teamline3: "U.S. Army Corps of Engineers: Jeff Arnold"
 teamline4: "Bureau of Reclamation: Levi Brekke"
 contacts: "Contact: Martyn Clark - mclark@ucar.edu | Julie Vano – jvano@ucar.edu"
-tags: [models, projects]
+tags: [projects]
 ---
 
 # Improving Hydrologic Modeling for Climate Impact Assessments

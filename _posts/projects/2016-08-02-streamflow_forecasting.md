@@ -4,7 +4,6 @@ title:  "SHARP"
 date:   2016-08-03 16:54:46
 categories:
 - projects
-- models
 img: sharp.jpg
 img2: sharp.png
 img3: sharp2.png
@@ -18,7 +17,7 @@ teamline2: "University of Washington: Bart Nijssen, Elizabeth Clark"
 teamline3: "U.S. Army Corps of Engineers: Jeff Arnold"
 teamline4: "Bureau of Reclamation: Levi Brekke" 
 contacts: "Contact:  Andy Wood - andywood@ucar.edu | Julie Vano - jvano@ucar.edu"
-tags: [models, projects]
+tags: [projects]
 ---
 
 # Advancing Streamflow Prediction for Water, Energy, and Hazard Management

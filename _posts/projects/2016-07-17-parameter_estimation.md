@@ -4,7 +4,6 @@ title:  "GMET"
 date:   2016-08-01 16:54:46
 categories:
 - projects
-- models
 img: gmet.jpg
 img2: gmet.png
 factsheet1: gmet_1pg.pdf
@@ -16,7 +15,7 @@ teamline1: "NCAR: Martyn Clark (PI), Andrew Newman, Andy Wood, Ethan Gutmann"
 teamline2: "U.S. Army Corps of Engineers: Jeff Arnold"
 teamline3: "Bureau of Reclamation: Levi Brekke"
 contacts: "Contact: Andy Newman - anewman@ucar.edu | Julie Vano - jvano@ucar.edu"
-tags: [models, projects]
+tags: [projects]
 ---
 
 # New Tools and Datasets for Understanding Observational Uncertainty

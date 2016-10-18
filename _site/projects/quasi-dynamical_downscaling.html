@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="/assets/ico/favicon.ico">
 
-    <title>COMPUTATIONAL HYDROLOGY - GMET</title>
+    <title>COMPUTATIONAL HYDROLOGY - ICAR</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
@@ -62,7 +62,7 @@
             <div id="blue">
     <div class="container">
         <div class="row">
-            <h3>GMET</h3>
+            <h3>ICAR</h3>
         </div><!-- /row -->
     </div> <!-- /container -->
 </div><!-- /blue -->
@@ -72,28 +72,34 @@
         <div class="col-lg-5 col-lg-offset-1">
             <div class="spacing"></div>
 
-            <h1 id="new-tools-and-datasets-for-understanding-observational-uncertainty">New Tools and Datasets for Understanding Observational Uncertainty</h1>
+            <h1 id="advances-in-generating-locally-relevant-climate-change-information">Advances in Generating Locally Relevant Climate Change Information</h1>
 
 <h4 id="the-challenge"><strong>The challenge:</strong></h4>
-<p>Many hydrologic applications require spatial meteorological datasets (gridded observations), but meteorological stations are neither evenly spaced nor are their observations (e.g. precipitation, temperature) always complete and error free.  Previous efforts to create gridded meteorological datasets from observations ignored uncertainties in measurements and in their interpolation across space, which is especially problematic when observations are sparse or terrain is complex.</p>
+
+<p>While climate change is occurring globally, changes are felt locally.  However, global climate models do not produce information at locally relevant scales.  Therefore, water managers and planners use “downscaling” methods to convert global climate data to decision-relevant spatial scales.</p>
+
+<p>One of the more reliable ways to perform this downscaling is through the use of high-resolution regional climate models; however, such models are too computationally expensive to be run for long time periods.  As a result, water managers often rely on simpler, statistical methods to downscale climate data. Such statistical methods however do not include atmospheric dynamics, and, therefore, may not represent local climate changes as well.</p>
 
 <h4 id="facing-this-challenge"><strong>Facing this challenge:</strong></h4>
 
-<p>Scientists and engineers in RAL’s Hydrometeorological Applications Program at the National Center for Atmospheric Research are collaborating with the U.S. Army Corps of Engineers, the Bureau of Reclamation, and the University of Washington to generate high-quality, probabilistic gridded meteorological fields that reflect uncertainties in historical meteorological datasets. These datasets are useful for global climate model evaluation, hydrologic model parameter estimation, and hydrologic model data assimilation. For example, during the Mississippi River flood of 1993, two areas in the central U.S. showed heavy precipitation: the flood region and the Gulf coast (top panel in figure).  Precipitation in the north of the domain was more spatially uniform than precipitation along the Gulf coast. Areas with highly spatially variable precipitation measurements will have larger uncertainty when interpolated to a grid.  The ensemble is able to capture these differences as shown in the bottom panel, which displays a measure of spread in the ensemble of precipitation estimates.</p>
+<p>Scientists and engineers in RAL’s Hydrometeorological Applications Program at the National Center for Atmospheric Research are collaborating with the U.S. Army Corps of Engineers, the Bureau of Reclamation, and the University of Bergen to develop a more computationally efficient form of regional climate modeling, the Intermediate Complexity Atmospheric Research model (ICAR).  ICAR combines large-scale atmospheric circulation from climate models with Linear Mountain Wave theory, a mathematical solution for determining the effect of mountains on atmospheric winds, to generate wind fields and calculate the motion of air parcels within the atmosphere. Then ICAR performs detailed full-physics calculations relating three-dimensional water vapor and temperature to the formation of clouds, rain, and snow.  The resulting precipitation predictions are similar to those predicted by a full-complexity regional climate model (WRF), and to the PRISM observed dataset (illustrated in the figure). The source code for ICAR, along with a growing library of documentation, is freely available at https://www.github.com/NCAR/icar.</p>
 
 <h4 id="scientific-advances"><strong>Scientific advances:</strong></h4>
 
-<p>Development of the Gridded Meteorological Ensemble Tool (GMET) allows for quantification of uncertainty for station-based gridded precipitation and temperature datasets, specifically:</p>
+<p>ICAR provides a new way of generating local climate information that captures local atmospheric dynamics and is computationally efficient, freeing water managers and planners from needing to choose between statistical and dynamical downscaling methods.</p>
 
 <ul>
   <li>
-    <p>GMET completes the many steps needed to construct gridded meteorological ensembles: (1) ingests station data (current simulations draw from over 12,000 unique stations), (2) ensures stations are serially complete (rejects records too short to be validated and fills data gaps using well-established methods), (3) interpolates the serially-complete precipitation and temperature time series from station data to estimate the probability of precipitation occurrence and probability distributions of precipitation amounts, and (4) generates ensemble gridded spatial fields using spatially and temporally correlated random fields to sample from estimated distributions generated in the earlier step, which allows for consistent estimates of uncertainty in both space and time.  The probabilistic interpolation approach is detailed in Clark and Slater [2006].</p>
+    <p><em>Physical processes.</em> ICAR provides a method of downscaling that is derived from physical principles, and incorporates some of the most advanced cloud and precipitation calculations in the scientific literature.</p>
   </li>
   <li>
-    <p>GMET has been used to develop a first-of-its-kind ensemble dataset of daily precipitation and temperature at one-eighth degree spatial resolution for the contiguous United States from 1980 to 2012. The 100-member ensemble dataset, described in Newman et al. [2015], compares well with established data products, reflects observational and interpolation uncertainty, and is freely available at: http://dx. doi.org/10.5065/D6TH8JR2.</p>
+    <p><em>Computational efficiency.</em> ICAR simulations can be performed 100 to 1000 times faster than a comparable simulation with a traditional regional climate model.</p>
   </li>
   <li>
-    <p>GMET produced ensembles have been used in hydrologic data assimilation (e.g., to evaluate the potential for snow data assimilation to improve seasonal streamflow prediction across the western US) and high-resolution regional climate model evaluation.</p>
+    <p><em>Skill in current climate.</em> ICAR’s representation of the precipitation that forms mountain snowpack, which is of great importance to those managing water resources in the western U.S., is excellent. ICAR explains 85-95% of the variability represented in a much more complex regional climate model, and is highly correlated with observed precipitation.</p>
+  </li>
+  <li>
+    <p><em>Flexibility.</em> ICAR has been designed to use a variety of model inputs and can easily be used to evaluate the influence of different physical assumptions on the downscaling process.</p>
   </li>
 </ul>
 
@@ -101,23 +107,17 @@
 
 <ul>
   <li>
-    <p>Augment the GMET tool, for example by adding new data sources (e.g., radar, satellite).</p>
+    <p>Current work is focused on improving the skill and physical process representation of ICAR, particularly for convective precipitation and land surface feedbacks.</p>
   </li>
   <li>
-    <p>Use GMET to further evaluate global climate model projections and examine methodological choices such as station selection criteria, interpolation scheme, spatial resolution, and topographic considerations (e.g., lapse rate choices).</p>
+    <p>ICAR is being used to generate downscaled climate datasets for the United States, including Alaska and Hawaii.</p>
   </li>
   <li>
-    <p>Continue to promote ways to incorporate uncertainty estimates as an integrated and formalized component of dataset generation and use.</p>
-  </li>
-  <li>
-    <p>Use GMET to develop ensemble historical meteorological datasets in Alaska and Hawaii.</p>
-  </li>
-  <li>
-    <p>Update the ensemble dataset for the contiguous United States through 2015, yearly updates thereafter.</p>
+    <p>ICAR is being evaluated in a variety of environments, including tests in the Alps, Norway, the Himalayas, and Chile.</p>
   </li>
 </ul>
 
-	    <img src="/assets/img/project/gmet.png" alt="">
+	    <img src="/assets/img/project/icar.png" alt="">
 	    
 
         </div>
@@ -126,21 +126,21 @@
             <div class="spacing"></div>
             <h4>Project Team</h4>
             <div class="hline"></div>
-            <p>NCAR: Martyn Clark (PI), Andrew Newman, Andy Wood, Ethan Gutmann</p>
+            <p>NCAR: Ethan Gutmann (PI), Martyn Clark, Trude Eidhammer, Roy Rasmussen</p>
+            <p>Uni Research (Bergen, Norway):  Idar Bartstad</p>
             <p>U.S. Army Corps of Engineers: Jeff Arnold</p>
             <p>Bureau of Reclamation: Levi Brekke</p>
             
             
             
-            
-            <p>Contact: Andy Newman - anewman@ucar.edu | Julie Vano - jvano@ucar.edu</p>
+            <p>Contact: Ethan Gutmann- gutmann@ucar.edu | Julie Vano - jvano@ucar.edu</p>
         </div>
 
         <div class="col-lg-4 col-lg-offset-1">
             <div class="spacing"></div>
             <h4>Project Sponsors</h4>
             <div class="hline"></div>
-            <p>U.S. Army Corps of Engineers, Bureau of Reclamation</p>
+            <p>U.S. Army Corps of Engineers, Bureau of Reclamation, National Science Foundation (check)</p>
 	</div>
 
 	<div class="col-lg-4 col-lg-offset-1">
@@ -148,10 +148,10 @@
             <h4>More Information At</h4>
             <div class="hline"></div> 
 	&nbsp
-	<p> Website: &nbsp <a href="www.ral.ucar.edu/projects/toolbox/gmet">www.ral.ucar.edu/projects/toolbox/gmet</a></p> 
+	<p> Website: &nbsp <a href="https://www.ral.ucar.edu/projects/icar">https://www.ral.ucar.edu/projects/icar</a></p> 
 	<p> Factsheets: &nbsp 
-        <a href="/assets/img/project/gmet_1pg.pdf"> 1-Pager</a> &nbsp
-        <a href="/assets/img/project/gmet_factsheet_2016_10.pdf">  2-Pager </a> (same info as this page)</p> 
+        <a href="/assets/img/project/comingsoon.pdf"> 1-Pager</a> &nbsp
+        <a href="/assets/img/project/icar_factsheet_2016_10.pdf">  2-Pager </a> (same info as this page)</p> 
 
         <!-- if statements below are not ideal, should find way to add variable into assign--> 
         
@@ -164,17 +164,31 @@
         
          <p> Papers: </p> 
         
-<ul> Newman, A.J., M.P. Clark, J. Craig, B. Nijssen, A.W. Wood, E.D. Gutmann, N. Mizukami, L. Brekke, and J.R. Arnold, 2014: Gridded ensemble precipitation and temperature estimates for the contiguous United States. <i> Journal of Hydrometeorology</i>, 
-	 <b>16</b>, 
-	2481-2500,  
-	 doi:<a href=http://dx.doi.org/10.1175/JHM-D-15-0026.1>10.1175/JHM-D-15-0026.1</a> 
+<ul> Gutmann, E., I. Barstad, M.P. Clark, J. Arnold, and R. Rasmussen, 2016: The Intermediate Complexity Atmospheric Research Model. <i> Journal of Hydrometeorology</i>, 
+	 <b>17</b>, 
+	957–973,  
+	 doi:<a href=http://dx.doi.org/10.1175/JHM-D-15-0155.1>10.1175/JHM-D-15-0155.1</a> 
 	</ul>
 &nbsp
 
-<ul> Gangopadhyay, S., M.P. Clark, and B. Rajagopalan, 2005: Statistical downscaling using K-nearest neighbor. <i> Water Resources Research</i>, 
-	 <b>41</b>, 
-	W02024,  
-	 doi:<a href=http://dx.doi.org/10.1029/2004WR003444>10.1029/2004WR003444</a> 
+<ul> Gutmann, E., T. Pruitt, M.P. Clark, L. Brekke, J.R. Arnold, D.A. Raff, and R.M. Rasmussen, 2014: An intercomparison of statistical downscaling methods used for water resource assessments in the United States. <i> Water Resources Research</i>, 
+	 <b>50</b>, 
+	7167–7186,  
+	 doi:<a href=http://dx.doi.org/10.1002/2014WR015559>10.1002/2014WR015559</a> 
+	</ul>
+&nbsp
+
+<ul> Gutmann, E.D., R.M. Rasmussen, C. Liu, K. Ikeda, D.J. Gochis, M.P. Clark, J. Dudhia, and G. Thompson, 2012: A Comparison of Statistical and Dynamical Downscaling of Winter Precipitation over Complex Terrain. <i> Journal of Climate</i>, 
+	 <b>25</b>, 
+	262–281,  
+	 doi:<a href=http://dx.doi.org/10.1175/2011JCLI4109.1>10.1175/2011JCLI4109.1</a> 
+	</ul>
+&nbsp
+
+<ul> Barstad, I., and S. Gronas, 2006: Dynamical structures for southwesterly airflow over southern Norway: the role of dissipation. <i> Tellus Series a-Dynamic Meteorology and Oceanography</i>, 
+	 <b>58</b>, 
+	2-18,  
+	 doi:<a href=http://dx.doi.org/doi:10.1111/j.1600- 0870.2006.00152.x>doi:10.1111/j.1600- 0870.2006.00152.x</a> 
 	</ul>
 &nbsp
 
@@ -220,7 +234,7 @@
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
                                 <h3 class="a1" data-animate="fadeInDown">SHARP</h3>
-                                <a href="/projects/models/streamflow_forecasting" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                                <a href="/projects/streamflow_forecasting" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
                     </div><!-- he wrap -->
@@ -240,23 +254,11 @@
             
                 <div class="portfolio-item graphic-design">
                     <div class="he-wrap tpl6">
-                    <img src="/assets/img/project/sharp.jpg" alt="">
-                        <div class="he-view">
-                            <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">SHARP</h3>
-                                <a href="/projects/models/SHARP" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                            </div><!-- he bg -->
-                        </div><!-- he view -->		
-                    </div><!-- he wrap -->
-                </div><!-- end col-12 -->
-            
-                <div class="portfolio-item graphic-design">
-                    <div class="he-wrap tpl6">
                     <img src="/assets/img/project/icar.jpg" alt="">
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
                                 <h3 class="a1" data-animate="fadeInDown">ICAR</h3>
-                                <a href="/projects/models/quasi-dynamical_downscaling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                                <a href="/projects/quasi-dynamical_downscaling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
                     </div><!-- he wrap -->
@@ -268,7 +270,7 @@
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
                                 <h3 class="a1" data-animate="fadeInDown">GMET</h3>
-                                <a href="/projects/models/parameter_estimation" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                                <a href="/projects/parameter_estimation" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
                     </div><!-- he wrap -->

@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="/assets/ico/favicon.ico">
 
-    <title>COMPUTATIONAL HYDROLOGY - SHARP</title>
+    <title>COMPUTATIONAL HYDROLOGY - GMET</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
@@ -62,7 +62,7 @@
             <div id="blue">
     <div class="container">
         <div class="row">
-            <h3>SHARP</h3>
+            <h3>GMET</h3>
         </div><!-- /row -->
     </div> <!-- /container -->
 </div><!-- /blue -->
@@ -72,30 +72,28 @@
         <div class="col-lg-5 col-lg-offset-1">
             <div class="spacing"></div>
 
-            <h1 id="advancing-streamflow-prediction-for-water-energy-and-hazard-management">Advancing Streamflow Prediction for Water, Energy, and Hazard Management</h1>
+            <h1 id="new-tools-and-datasets-for-understanding-observational-uncertainty">New Tools and Datasets for Understanding Observational Uncertainty</h1>
 
 <h4 id="the-challenge"><strong>The challenge:</strong></h4>
-
-<p>Current operational hydrologic forecasting relies on legacy conceptual watershed models coupled with expert forecaster judgment – a medley of scripted processes and manual adjustments to data, analyses, and products made by trained hydrologists. While this approach benefits from the rich experience of hydrologists, the manual effort and ad hoc workflows limit the capacity to test the potential of new scientific approaches.  Because the current practice is not reproducible, it cannot quantify forecast uncertainties, which decisionmakers increasingly require to balance risks and opportunities during challenging hydrometeorological events.</p>
+<p>Many hydrologic applications require spatial meteorological datasets (gridded observations), but meteorological stations are neither evenly spaced nor are their observations (e.g. precipitation, temperature) always complete and error free.  Previous efforts to create gridded meteorological datasets from observations ignored uncertainties in measurements and in their interpolation across space, which is especially problematic when observations are sparse or terrain is complex.</p>
 
 <h4 id="facing-this-challenge"><strong>Facing this challenge:</strong></h4>
 
-<p>Scientists and engineers in RAL’s Hydrometeorological Applications Program at the National Center for Atmospheric Research have been sponsored by the U.S. Army Corps of Engineers and Bureau of Reclamation to evaluate whether new science-based techniques and strategies for real-time hydrologic flood and drought forecasting are now viable for supporting real-time water decisions.  To answer this question, NCAR has collaborated with the University of Washington to develop and run a fully automated real-time forecast system called SHARP (System for Hydromet Analysis, Research, and Prediction).  The system produces real-time ensemble streamflow predictions for lead times of days to seasons, using state-of-the-science weather and climate forecast datasets, hydrologic models, statistical methods and other tools.  Overall, the approach enhances the physical realism of real-time watershed monitoring and prediction, while maintaining the computational agility needed to depict uncertainties (e.g., using ensemble techniques).  The research will help us understand the tradeoffs of making components of our nation’s hydrologic monitoring and prediction workflows more automated and objective, opening the door to advances such as more complex watershed models and uncertainty aware products.  The overarching goal is to strengthen our nation’s scientific foundation for operational hydrologic prediction to better manage resources and risk in the face of changing weather and climate extremes.</p>
+<p>Scientists and engineers in RAL’s Hydrometeorological Applications Program at the National Center for Atmospheric Research are collaborating with the U.S. Army Corps of Engineers, the Bureau of Reclamation, and the University of Washington to generate high-quality, probabilistic gridded meteorological fields that reflect uncertainties in historical meteorological datasets. These datasets are useful for global climate model evaluation, hydrologic model parameter estimation, and hydrologic model data assimilation. For example, during the Mississippi River flood of 1993, two areas in the central U.S. showed heavy precipitation: the flood region and the Gulf coast (top panel in figure).  Precipitation in the north of the domain was more spatially uniform than precipitation along the Gulf coast. Areas with highly spatially variable precipitation measurements will have larger uncertainty when interpolated to a grid.  The ensemble is able to capture these differences as shown in the bottom panel, which displays a measure of spread in the ensemble of precipitation estimates.</p>
 
 <h4 id="scientific-advances"><strong>Scientific advances:</strong></h4>
 
+<p>Development of the Gridded Meteorological Ensemble Tool (GMET) allows for quantification of uncertainty for station-based gridded precipitation and temperature datasets, specifically:</p>
+
 <ul>
   <li>
-    <p>Assembles the building blocks for monitoring and prediction within an experimental real-time operational platform serving a selection of watersheds across the United States.  Elements include higher complexity hydrologic modeling, statistical post-processing, hydrologic data assimilation, and ensemble techniques for hydrometeorological monitoring, weather and climate downscaling, and verification.</p>
+    <p>GMET completes the many steps needed to construct gridded meteorological ensembles: (1) ingests station data (current simulations draw from over 12,000 unique stations), (2) ensures stations are serially complete (rejects records too short to be validated and fills data gaps using well-established methods), (3) interpolates the serially-complete precipitation and temperature time series from station data to estimate the probability of precipitation occurrence and probability distributions of precipitation amounts, and (4) generates ensemble gridded spatial fields using spatially and temporally correlated random fields to sample from estimated distributions generated in the earlier step, which allows for consistent estimates of uncertainty in both space and time.  The probabilistic interpolation approach is detailed in Clark and Slater [2006].</p>
   </li>
   <li>
-    <p>Facilitates a systematic intercomparison of monitoring and prediction techniques, enabling a structured way to assess whether a new technique improves watershed analyses and increases predictability relative to current approaches. For example, seasonal reservoir inflow predictions can be generated using a range of techniques (statistical, dynamical, and hybrid methods) that leverage predictability from both the land surface and climate, or by using simple versus complex hydrological models.</p>
+    <p>GMET has been used to develop a first-of-its-kind ensemble dataset of daily precipitation and temperature at one-eighth degree spatial resolution for the contiguous United States from 1980 to 2012. The 100-member ensemble dataset, described in Newman et al. [2015], compares well with established data products, reflects observational and interpolation uncertainty, and is freely available at: http://dx. doi.org/10.5065/D6TH8JR2.</p>
   </li>
   <li>
-    <p>Evaluates the practicality of new science through interaction with reservoir managers to foster two-way learning that helps both researchers and streamflow prediction and water management communities identify opportunities to integrate advanced methods into prediction services and increase water management flexibility in the future.</p>
-  </li>
-  <li>
-    <p>Enables a real-world assessment of the suitability of more modern, complex watershed models for water management applications. Provides an analytical test bed comprising hundreds of calibrated watershed models across the United States for understanding hydrometeorological trends and variability.</p>
+    <p>GMET produced ensembles have been used in hydrologic data assimilation (e.g., to evaluate the potential for snow data assimilation to improve seasonal streamflow prediction across the western US) and high-resolution regional climate model evaluation.</p>
   </li>
 </ul>
 
@@ -103,17 +101,23 @@
 
 <ul>
   <li>
-    <p>Expand SHARP implementation to: contrast a broader variety of watershed models in a real-time context; demonstrate and evaluate the applicability of the new models; and demonstrate medium-range to seasonal ensemble prediction approaches.</p>
+    <p>Augment the GMET tool, for example by adding new data sources (e.g., radar, satellite).</p>
   </li>
   <li>
-    <p>The real-time forecast demonstration will raise awareness and promote discussion about alternative approaches within the research, operational and management communities.</p>
+    <p>Use GMET to further evaluate global climate model projections and examine methodological choices such as station selection criteria, interpolation scheme, spatial resolution, and topographic considerations (e.g., lapse rate choices).</p>
+  </li>
+  <li>
+    <p>Continue to promote ways to incorporate uncertainty estimates as an integrated and formalized component of dataset generation and use.</p>
+  </li>
+  <li>
+    <p>Use GMET to develop ensemble historical meteorological datasets in Alaska and Hawaii.</p>
+  </li>
+  <li>
+    <p>Update the ensemble dataset for the contiguous United States through 2015, yearly updates thereafter.</p>
   </li>
 </ul>
 
-
-	    <img src="/assets/img/project/sharp.png" alt="">
-	    
-            	<img src="/assets/img/project/sharp2.png" alt="">
+	    <img src="/assets/img/project/gmet.png" alt="">
 	    
 
         </div>
@@ -122,21 +126,21 @@
             <div class="spacing"></div>
             <h4>Project Team</h4>
             <div class="hline"></div>
-            <p>NCAR: Andy Wood (PI), Martyn Clark (Co-PI), Pablo Mendoza, Andy Newman, Ethan Gutmann</p>
-            <p>University of Washington: Bart Nijssen, Elizabeth Clark</p>
+            <p>NCAR: Martyn Clark (PI), Andrew Newman, Andy Wood, Ethan Gutmann</p>
             <p>U.S. Army Corps of Engineers: Jeff Arnold</p>
             <p>Bureau of Reclamation: Levi Brekke</p>
             
             
             
-            <p>Contact:  Andy Wood - andywood@ucar.edu | Julie Vano - jvano@ucar.edu</p>
+            
+            <p>Contact: Andy Newman - anewman@ucar.edu | Julie Vano - jvano@ucar.edu</p>
         </div>
 
         <div class="col-lg-4 col-lg-offset-1">
             <div class="spacing"></div>
             <h4>Project Sponsors</h4>
             <div class="hline"></div>
-            <p>Bureau of Reclamation, NOAA, NASA, National Science Foundation, U.S. Army Corps of Engineers (check, spell out?)</p>
+            <p>U.S. Army Corps of Engineers, Bureau of Reclamation</p>
 	</div>
 
 	<div class="col-lg-4 col-lg-offset-1">
@@ -144,10 +148,10 @@
             <h4>More Information At</h4>
             <div class="hline"></div> 
 	&nbsp
-	<p> Website: &nbsp <a href="https://www.ral.ucar.edu/projects/sharp">https://www.ral.ucar.edu/projects/sharp</a></p> 
+	<p> Website: &nbsp <a href="www.ral.ucar.edu/projects/toolbox/gmet">www.ral.ucar.edu/projects/toolbox/gmet</a></p> 
 	<p> Factsheets: &nbsp 
-        <a href="/assets/img/project/comingsoon.pdf"> 1-Pager</a> &nbsp
-        <a href="/assets/img/project/sharp_factsheet_2016_10.pdf">  2-Pager </a> (same info as this page)</p> 
+        <a href="/assets/img/project/gmet_1pg.pdf"> 1-Pager</a> &nbsp
+        <a href="/assets/img/project/gmet_factsheet_2016_10.pdf">  2-Pager </a> (same info as this page)</p> 
 
         <!-- if statements below are not ideal, should find way to add variable into assign--> 
         
@@ -158,8 +162,22 @@
         
         
         
+         <p> Papers: </p> 
         
-        
+<ul> Newman, A.J., M.P. Clark, J. Craig, B. Nijssen, A.W. Wood, E.D. Gutmann, N. Mizukami, L. Brekke, and J.R. Arnold, 2014: Gridded ensemble precipitation and temperature estimates for the contiguous United States. <i> Journal of Hydrometeorology</i>, 
+	 <b>16</b>, 
+	2481-2500,  
+	 doi:<a href=http://dx.doi.org/10.1175/JHM-D-15-0026.1>10.1175/JHM-D-15-0026.1</a> 
+	</ul>
+&nbsp
+
+<ul> Gangopadhyay, S., M.P. Clark, and B. Rajagopalan, 2005: Statistical downscaling using K-nearest neighbor. <i> Water Resources Research</i>, 
+	 <b>41</b>, 
+	W02024,  
+	 doi:<a href=http://dx.doi.org/10.1029/2004WR003444>10.1029/2004WR003444</a> 
+	</ul>
+&nbsp
+
 
 
         </div>
@@ -202,7 +220,7 @@
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
                                 <h3 class="a1" data-animate="fadeInDown">SHARP</h3>
-                                <a href="/projects/models/streamflow_forecasting" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                                <a href="/projects/streamflow_forecasting" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
                     </div><!-- he wrap -->
@@ -222,23 +240,11 @@
             
                 <div class="portfolio-item graphic-design">
                     <div class="he-wrap tpl6">
-                    <img src="/assets/img/project/sharp.jpg" alt="">
-                        <div class="he-view">
-                            <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">SHARP</h3>
-                                <a href="/projects/models/SHARP" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                            </div><!-- he bg -->
-                        </div><!-- he view -->		
-                    </div><!-- he wrap -->
-                </div><!-- end col-12 -->
-            
-                <div class="portfolio-item graphic-design">
-                    <div class="he-wrap tpl6">
                     <img src="/assets/img/project/icar.jpg" alt="">
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
                                 <h3 class="a1" data-animate="fadeInDown">ICAR</h3>
-                                <a href="/projects/models/quasi-dynamical_downscaling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                                <a href="/projects/quasi-dynamical_downscaling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
                     </div><!-- he wrap -->
@@ -250,7 +256,7 @@
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
                                 <h3 class="a1" data-animate="fadeInDown">GMET</h3>
-                                <a href="/projects/models/parameter_estimation" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                                <a href="/projects/parameter_estimation" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
                     </div><!-- he wrap -->
