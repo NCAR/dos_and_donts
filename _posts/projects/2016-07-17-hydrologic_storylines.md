@@ -1,10 +1,11 @@
 ---
 layout: project
-title:  "storylines"
+title:  "Quantitative Hydrologic Storylines"
+ref: storylines
 date:   2016-08-03 16:54:46
 categories:
 - projects
-img: storylines.jpg
+img: hydrologic_storylines.jpg
 img2: storylines.png
 factsheet1: comingsoon.pdf
 factsheet2: storylines_factsheet_2016_10.pdf

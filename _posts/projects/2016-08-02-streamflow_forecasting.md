@@ -1,10 +1,11 @@
 ---
 layout: project
-title:  "SHARP"
+title:  "Streamflow Forecasting"
+ref: SHARP
 date:   2016-08-03 16:54:46
 categories:
 - projects
-img: sharp.jpg
+img: streamflow_forecasting.jpg
 img2: sharp.png
 img3: sharp2.png
 factsheet1: comingsoon.pdf

@@ -1,10 +1,11 @@
 ---
 layout: project
-title:  "ICAR"
+title:  "Quasi-dynamical Downscaling"
+ref: ICAR
 date:   2016-08-01 16:55:00
 categories:
 - projects
-img: icar.jpg
+img: quasi-dynamical_downscaling.jpg
 img2: icar.png
 factsheet1: comingsoon.pdf
 factsheet2: icar_factsheet_2016_10.pdf

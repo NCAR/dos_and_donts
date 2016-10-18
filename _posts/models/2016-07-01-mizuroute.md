@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "mizuRoute"
+title:  "MizuRoute"
 date:   2016-08-01 16:54:46
 categories:
 - models

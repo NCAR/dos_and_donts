@@ -1,10 +1,11 @@
 ---
 layout: project
-title:  "hydrologic modeling"
+title:  "Hydrologic Modeling"
+ref: SUMMA
 date:   2016-08-03 16:55:00
 categories:
 - projects
-img: hydro_model_project.jpg
+img: hydrologic_modeling.jpg
 img2: summa.png
 factsheet1: comingsoon.pdf
 factsheet2: summa_factsheet_2016_10.pdf

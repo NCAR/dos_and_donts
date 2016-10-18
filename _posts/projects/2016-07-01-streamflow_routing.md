@@ -1,6 +1,7 @@
 ---
 layout: project
-title:  "streamflow routing"
+title:  "Streamflow Routing"
+ref: mizuRoute
 date:   2016-08-01 16:54:46
 categories:
 - projects
@@ -8,7 +9,6 @@ img: streamflow_routing.jpg
 img2: mizuRoute.png
 factsheet1: mizuRoute_1pg.pdf
 factsheet2: mizuRoute_factsheet_2016_10.pdf
-thumb: mizuRoute.png
 sponsors: U.S. Army Corps of Engineers, Bureau of Reclamation
 website: www.ral.ucar.edu/projects/toolbox/mizuRoute
 teamline1: "NCAR: Martyn Clark (PI), Naoki Mizukami"

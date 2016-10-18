@@ -1,10 +1,11 @@
 ---
 layout: project
-title:  "Gridded Meteorological Ensemble Tool (GMET)"
+title:  "Meteorological Datasets"
+ref: GMET
 date:   2016-08-01 16:54:46
 categories:
-- models
-img: gmet.jpg
+- projects
+img: meteorological_datasets.jpg
 img2: gmet.png
 factsheet1: gmet_1pg.pdf
 factsheet2: gmet_factsheet_2016_10.pdf
@@ -15,7 +16,7 @@ teamline1: "NCAR: Martyn Clark (PI), Andrew Newman, Andy Wood, Ethan Gutmann"
 teamline2: "U.S. Army Corps of Engineers: Jeff Arnold"
 teamline3: "Bureau of Reclamation: Levi Brekke"
 contacts: "Contact: Andy Newman - anewman@ucar.edu | Julie Vano - jvano@ucar.edu"
-tags: [models]
+tags: [projects]
 ---
 
 # New Tools and Datasets for Understanding Observational Uncertainty

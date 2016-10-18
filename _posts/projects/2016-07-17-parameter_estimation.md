@@ -1,50 +1,57 @@
 ---
 layout: project
-title:  "GMET"
-date:   2016-08-01 16:54:46
+title:  "Parameter Estimation"
+ref: MPR-flex
+date:   2016-04-25 16:54:46
 categories:
 - projects
-img: gmet.jpg
-img2: gmet.png
-factsheet1: gmet_1pg.pdf
-factsheet2: gmet_factsheet_2016_10.pdf
-thumb: gmet.png
+img: parameter_estimation.jpg
+img2: mpr-flex.png
+factsheet1: comingsoon.pdf
+factsheet2: mpr-flex_factsheet_2016_10.pdf
+thumb: mpr-flex.png
 sponsors: U.S. Army Corps of Engineers, Bureau of Reclamation
-website: www.ral.ucar.edu/projects/toolbox/gmet
-teamline1: "NCAR: Martyn Clark (PI), Andrew Newman, Andy Wood, Ethan Gutmann"
-teamline2: "U.S. Army Corps of Engineers: Jeff Arnold"
-teamline3: "Bureau of Reclamation: Levi Brekke"
-contacts: "Contact: Andy Newman - anewman@ucar.edu | Julie Vano - jvano@ucar.edu"
+website: www.ral.ucar.edu/projects/toolbox/MPRflex
+teamline1: "NCAR: Martyn Clark (PI), Naoki Mizukami, Andrew Newman, Andy Wood, Ethan Gutmann"
+teamline2: "UFZ Helmholz Institute (Leipzig, Germany): Luis Samaniego, Olda Rakevic, Stephan Thober"
+teamline3: "U.S. Army Corps of Engineers: Jeff Arnold"
+teamline4: "Bureau of Reclamation: Levi Brekke"
+contacts: "Contact: Martyn Clark - mclark@ucar.edu | Julie Vano - jvano@ucar.edu"
 tags: [projects]
 ---
 
-# New Tools and Datasets for Understanding Observational Uncertainty
+# Removing Artificial Barriers in Nationwide Hydrologic Simulations
 
 #### **The challenge:** 
-Many hydrologic applications require spatial meteorological datasets (gridded observations), but meteorological stations are neither evenly spaced nor are their observations (e.g. precipitation, temperature) always complete and error free.  Previous efforts to create gridded meteorological datasets from observations ignored uncertainties in measurements and in their interpolation across space, which is especially problematic when observations are sparse or terrain is complex.
+Hydrologic models estimate the exchange of water and energy at the land surface using physically-based equations that represent the features of different locations (e.g., forests v. grasslands) based on parameters that vary spatially. While many parameter values are based on satellite information or geological surveys, others are estimated through calibration (e.g., adjust parameter values to match historical streamflow). Parameter estimation over large domains is especially difficult. Consequently, many current large scale hydrologic assessments rely on spatially inconsistent parameter fields (left panels in figure below) resulting from individual basin calibration, or spatially constant parameters resulting from the adoption of default or a-priori estimates.
 
 #### **Facing this challenge:**
 
-Scientists and engineers in RAL's Hydrometeorological Applications Program at the National Center for Atmospheric Research are collaborating with the U.S. Army Corps of Engineers, the Bureau of Reclamation, and the University of Washington to generate high-quality, probabilistic gridded meteorological fields that reflect uncertainties in historical meteorological datasets. These datasets are useful for global climate model evaluation, hydrologic model parameter estimation, and hydrologic model data assimilation. For example, during the Mississippi River flood of 1993, two areas in the central U.S. showed heavy precipitation: the flood region and the Gulf coast (top panel in figure).  Precipitation in the north of the domain was more spatially uniform than precipitation along the Gulf coast. Areas with highly spatially variable precipitation measurements will have larger uncertainty when interpolated to a grid.  The ensemble is able to capture these differences as shown in the bottom panel, which displays a measure of spread in the ensemble of precipitation estimates.
+Scientists and engineers in RAL's Hydrometeorological Applications Program at the National Center for Atmospheric Research are collaborating with the U.S. Army Corps of Engineers, the Bureau of Reclamation, and the University of Washington to build a model-independent, flexible parameter estimation tool that enables continental-domain applications of multiple hydrologic models in a spatially consistent way.
 
 #### **Scientific advances:**
 
-Development of the Gridded Meteorological Ensemble Tool (GMET) allows for quantification of uncertainty for station-based gridded precipitation and temperature datasets, specifically:
+Parameter estimation over the United States is being improved by:
 
-*	GMET completes the many steps needed to construct gridded meteorological ensembles: (1) ingests station data (current simulations draw from over 12,000 unique stations), (2) ensures stations are serially complete (rejects records too short to be validated and fills data gaps using well-established methods), (3) interpolates the serially-complete precipitation and temperature time series from station data to estimate the probability of precipitation occurrence and probability distributions of precipitation amounts, and (4) generates ensemble gridded spatial fields using spatially and temporally correlated random fields to sample from estimated distributions generated in the earlier step, which allows for consistent estimates of uncertainty in both space and time.  The probabilistic interpolation approach is detailed in Clark and Slater [2006].
+*	Development of a stand-alone software package that can generate optimized, spatially continuous parameter fields for multiple hydrologic models. This parameter estimation tool, MPR-flex, uses the Multi-scale Parameter Regionalization (MPR) technique, first developed for the meso-scale Hydrologic Model (mHM) [Samaniego et al. 2010]. 
 
-*	GMET has been used to develop a first-of-its-kind ensemble dataset of daily precipitation and temperature at one-eighth degree spatial resolution for the contiguous United States from 1980 to 2012. The 100-member ensemble dataset, described in Newman et al. [2015], compares well with established data products, reflects observational and interpolation uncertainty, and is freely available at: http://dx. doi.org/10.5065/D6TH8JR2.
+*   Improved the functionality in the MPR technique through adding a library of equations (pedo-transfer functions), which relate measurable geophysical properties of soil and vegetation to parameter values that hydrologic models use to simulate water movement and storage in the soil.  
 
-*	GMET produced ensembles have been used in hydrologic data assimilation (e.g., to evaluate the potential for snow data assimilation to improve seasonal streamflow prediction across the western US) and high-resolution regional climate model evaluation.
+*   Modifications in how parameters are estimated spatially. Instead of conducting simulations for every grid, obtain optimized transfer function coefficients for key hydrologic model parameters, based on several hundred unimpaired headwater basins across the United States.  Then, parameter values in locations that are ungauged (and therefore cannot be calibrated) can be estimated using these optimized transfer function coefficients.
+
+*	Discovery of viable parameters that can be based on a combination of measureable properties (e.g., root-zone depth is based on vegetation-soil interaction, base flow parameter depends on topography and saturated hydraulic conductivity). MPR-flex is designed to ingest various geophysical properties such as soil, topography, vegetation information in the same framework, which facilitates estimation of these multifaceted parameters.
+
+*   New parameter sets for the contiguous United States are generated for the VIC hydrologic model using MPR-flex (two parameter fields are illustrated in the figure).
+
 
 #### **Moving Forward:** 
 
-*	Augment the GMET tool, for example by adding new data sources (e.g., radar, satellite).
+These scientific advances provide opportunities to:
 
-*	Use GMET to further evaluate global climate model projections and examine methodological choices such as station selection criteria, interpolation scheme, spatial resolution, and topographic considerations (e.g., lapse rate choices). 
+*	Use MPR-flex to generate spatially distributed parameter sets for other hydrologic models (e.g., the modeling framework SUMMA).
 
-*   Continue to promote ways to incorporate uncertainty estimates as an integrated and formalized component of dataset generation and use.
+*	Conduct spatially consistent, continental-domain climate impact assessments using multiple hydrologic models.
 
-*   Use GMET to develop ensemble historical meteorological datasets in Alaska and Hawaii.
+*	Better understand and evaluate parameter uncertainty in hydrologic models by varying assumptions made during the parameter estimation process.
 
-*   Update the ensemble dataset for the contiguous United States through 2015, yearly updates thereafter.
+*	Use MPR-flex to estimate parameters in Alaska and Hawaii.

@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="/assets/ico/favicon.ico">
 
-    <title>COMPUTATIONAL HYDROLOGY - The Whole</title>
+    <title>COMPUTATIONAL HYDROLOGY - Flexible Multi-scale Parameter Regionalization (MPR-flex)</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
@@ -62,7 +62,7 @@
             <div id="blue">
     <div class="container">
         <div class="row">
-            <h3>The Whole</h3>
+            <h3>Flexible Multi-scale Parameter Regionalization (MPR-flex)</h3>
         </div><!-- /row -->
     </div> <!-- /container -->
 </div><!-- /blue -->
@@ -72,61 +72,57 @@
         <div class="col-lg-5 col-lg-offset-1">
             <div class="spacing"></div>
 
-            <h1 id="new-science-to-support-future-water-resources-planning-and-management">New Science to Support Future Water Resources Planning and Management</h1>
+            <h1 id="removing-artificial-barriers-in-nationwide-hydrologic-simulations">Removing Artificial Barriers in Nationwide Hydrologic Simulations</h1>
 
 <h4 id="the-challenge"><strong>The challenge:</strong></h4>
-
-<p>Climate and hydrologic applications for water resources planning and management—such as climate impact assessments and streamflow forecasting—commonly neglect important sources of uncertainty, especially those associated with internal climate system variability, downscaling methods, and hydrologic modeling.  Too often resources are limited and tools are unavailable to evaluate more than a single source of uncertainty (e.g., using multiple global climate models).  As a result, evaluations of future risk may be over-confident.</p>
+<p>Hydrologic models estimate the exchange of water and energy at the land surface using physically-based equations that represent the features of different locations (e.g., forests v. grasslands) based on parameters that vary spatially. While many parameter values are based on satellite information or geological surveys, others are estimated through calibration (e.g., adjust parameter values to match historical streamflow). Parameter estimation over large domains is especially difficult. Consequently, many current large scale hydrologic assessments rely on spatially inconsistent parameter fields (left panels in figure below) resulting from individual basin calibration, or spatially constant parameters resulting from the adoption of default or a-priori estimates.</p>
 
 <h4 id="facing-this-challenge"><strong>Facing this challenge:</strong></h4>
 
-<p>Scientists and engineers in RAL’s Hydrometeorological Applications Program at the National Center for Atmospheric Research are collaborating with the U.S. Army Corps of Engineers, the Bureau of Reclamation, and the University of Washington to build tools that will help to characterize uncertainties in climate impacts assessments at each step of the modeling chain. Through developing improved methods, models, and datasets (illustrated in the figure), this research improves the fundamental building blocks on which hydrometeorological analyses and applications depend. It also, importantly, provides useful tools and data resources for both researchers and practitioners to better reveal climate change risks and more effectively evaluate future change and adaptation options.</p>
+<p>Scientists and engineers in RAL’s Hydrometeorological Applications Program at the National Center for Atmospheric Research are collaborating with the U.S. Army Corps of Engineers, the Bureau of Reclamation, and the University of Washington to build a model-independent, flexible parameter estimation tool that enables continental-domain applications of multiple hydrologic models in a spatially consistent way.</p>
 
 <h4 id="scientific-advances"><strong>Scientific advances:</strong></h4>
 
-<p>Each research component (blue text in the figure) advances our knowledge independent of the others, and collectively they provide a strong foundation for understanding and adapting to future change, servicing multiple needs for multiple users.</p>
-
-<ol>
-  <li>
-    <p><em>Gridded meteorological ensemble tool (GMET)</em>: Generates high-quality, probabilistic gridded meteorological fields that can be used to quantify uncertainty of meteorological forcings useful for climate model evaluation, hydrologic model parameter estimation, and hydrologic data assimilation.</p>
-  </li>
-  <li>
-    <p><em>Intermediate Complexity Atmospheric Research (ICAR) model</em>: a quasi-dynamical downscaling approach that uses simplified wind dynamics to perform high-resolution simulations 100 to 1000 times faster than a traditional atmospheric model and can therefore be used to better characterize uncertainty across climate models and in dynamical downscaling.</p>
-  </li>
-  <li>
-    <p><em>Structure for Unifying Multiple Modeling Alternatives (SUMMA) framework</em>: a new hydrologic modeling framework that provides multiple options to simulate all dominant biophysical and hydrologic processes from the treetops to the stream, and is particularly useful to characterize model and parameter uncertainty in hydrologic model simulations.</p>
-  </li>
-  <li>
-    <p><em>Multi-scale Parameter Regionalization Flex (MPR-flex)</em>: a model-independent, flexible parameter estimation application that enables continental-domain application of multiple hydrologic models in a spatially consistent way.</p>
-  </li>
-  <li>
-    <p><em>mizuRoute</em>: a multi-method, continental-domain routing model that efficiently routes streamflow from any distributed hydrologic model through river networks, not just changes on a grid.  It has been used to provides streamflow values at 54,000 river segments across the contiguous United States.</p>
-  </li>
-  <li>
-    <p><em>System for Hydromet Analysis Research and Prediction (SHARP)</em>: an integrative prediction framework that leverages the methodological advances outlined above to evaluate climate impacts and adaptation options, developed by using real-time demonstrations of streamflow predictions.</p>
-  </li>
-</ol>
-
-<h4 id="moving-forward"><strong>Moving Forward:</strong></h4>
-
-<p>These scientific advances provide a new way to characterize climate impacts on water resources by:</p>
+<p>Parameter estimation over the United States is being improved by:</p>
 
 <ul>
   <li>
-    <p>Moving to large ensembles: this effort, through the collection of tools outlined above, enhances the water resource research community’s ability to generate large ensembles that comprehensively characterize uncertainties and better reveal undiscovered risk.</p>
+    <p>Development of a stand-alone software package that can generate optimized, spatially continuous parameter fields for multiple hydrologic models. This parameter estimation tool, MPR-flex, uses the Multi-scale Parameter Regionalization (MPR) technique, first developed for the meso-scale Hydrologic Model (mHM) [Samaniego et al. 2010].</p>
   </li>
   <li>
-    <p>Generating hydrologic storylines: large ensembles, while important in revealing uncertainties, can be computationally impractical in applications.  As such, there is work underway to distill future scenarios into a discrete set of quantitative hydrologic “storylines” that represent key, impact-focused, features from the full range of scenarios.</p>
+    <p>Improved the functionality in the MPR technique through adding a library of equations (pedo-transfer functions), which relate measurable geophysical properties of soil and vegetation to parameter values that hydrologic models use to simulate water movement and storage in the soil.</p>
   </li>
   <li>
-    <p>Providing resources for the entire Nation: these tools provide consistent, continental-domain datasets and are currently being implemented in Alaska and Hawaii.</p>
+    <p>Modifications in how parameters are estimated spatially. Instead of conducting simulations for every grid, obtain optimized transfer function coefficients for key hydrologic model parameters, based on several hundred unimpaired headwater basins across the United States.  Then, parameter values in locations that are ungauged (and therefore cannot be calibrated) can be estimated using these optimized transfer function coefficients.</p>
   </li>
   <li>
-    <p>Issuing guidance for appropriate use: these tools and datasets will be publically available and will be accompanied with documentation for how to use them to support adaptation planning and decision making.</p>
+    <p>Discovery of viable parameters that can be based on a combination of measureable properties (e.g., root-zone depth is based on vegetation-soil interaction, base flow parameter depends on topography and saturated hydraulic conductivity). MPR-flex is designed to ingest various geophysical properties such as soil, topography, vegetation information in the same framework, which facilitates estimation of these multifaceted parameters.</p>
+  </li>
+  <li>
+    <p>New parameter sets for the contiguous United States are generated for the VIC hydrologic model using MPR-flex (two parameter fields are illustrated in the figure).</p>
   </li>
 </ul>
 
-	    <img src="/assets/img/project/modelchain.png" alt="">
+<h4 id="moving-forward"><strong>Moving Forward:</strong></h4>
+
+<p>These scientific advances provide opportunities to:</p>
+
+<ul>
+  <li>
+    <p>Use MPR-flex to generate spatially distributed parameter sets for other hydrologic models (e.g., the modeling framework SUMMA).</p>
+  </li>
+  <li>
+    <p>Conduct spatially consistent, continental-domain climate impact assessments using multiple hydrologic models.</p>
+  </li>
+  <li>
+    <p>Better understand and evaluate parameter uncertainty in hydrologic models by varying assumptions made during the parameter estimation process.</p>
+  </li>
+  <li>
+    <p>Use MPR-flex to estimate parameters in Alaska and Hawaii.</p>
+  </li>
+</ul>
+
+	    <img src="/assets/img/project/mpr-flex.png" alt="">
 	    
 
         </div>
@@ -135,14 +131,14 @@
             <div class="spacing"></div>
             <h4>Project Team</h4>
             <div class="hline"></div>
-            <p>NCAR: Martyn Clark (PI), Ethan Gutmann (Co-PI), Andy Wood (Co-PI), Andy Newman, Naoki Mizukami, Julie Vano</p>
-            <p>University of Washington: Bart Nijssen</p>
+            <p>NCAR: Martyn Clark (PI), Naoki Mizukami, Andrew Newman, Andy Wood, Ethan Gutmann</p>
+            <p>UFZ Helmholz Institute (Leipzig, Germany): Luis Samaniego, Olda Rakevic, Stephan Thober</p>
             <p>U.S. Army Corps of Engineers: Jeff Arnold</p>
-            <p>Bureau of Reclamation: Levi Brekke, Ken Nowak</p>
+            <p>Bureau of Reclamation: Levi Brekke</p>
             
             
             
-            <p>Contact: Martyn Clark - mclark@ucar.edu  | Julie Vano - jvano@ucar.edu</p>
+            <p>Contact: Martyn Clark - mclark@ucar.edu | Julie Vano - jvano@ucar.edu</p>
         </div>
 
         <div class="col-lg-4 col-lg-offset-1">
@@ -157,10 +153,10 @@
             <h4>More Information At</h4>
             <div class="hline"></div> 
 	&nbsp
-	<p> Website: &nbsp <a href="www.ral.ucar.edu/projects/toolbox">www.ral.ucar.edu/projects/toolbox</a></p> 
+	<p> Website: &nbsp <a href="www.ral.ucar.edu/projects/toolbox/MPRflex">www.ral.ucar.edu/projects/toolbox/MPRflex</a></p> 
 	<p> Factsheets: &nbsp 
         <a href="/assets/img/project/comingsoon.pdf"> 1-Pager</a> &nbsp
-        <a href="/assets/img/project/The_whole_factsheet_2016_10.pdf">  2-Pager </a> (same info as this page)</p> 
+        <a href="/assets/img/project/mpr-flex_factsheet_2016_10.pdf">  2-Pager </a> (same info as this page)</p> 
 
         <!-- if statements below are not ideal, should find way to add variable into assign--> 
         
@@ -187,11 +183,11 @@
             
                 <div class="portfolio-item graphic-design">
                     <div class="he-wrap tpl6">
-                    <img src="/assets/img/project/toolbox.jpg" alt="">
+                    <img src="/assets/img/project/TOOLBOX_overview.jpg" alt="">
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">The Whole</h3>
-                                <a href="/projects/toolbox" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                                <h3 class="a1" data-animate="fadeInDown">Overview</h3>
+                                <a href="/projects/overview" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
                     </div><!-- he wrap -->
@@ -199,10 +195,10 @@
             
                 <div class="portfolio-item graphic-design">
                     <div class="he-wrap tpl6">
-                    <img src="/assets/img/project/hydro_model_project.jpg" alt="">
+                    <img src="/assets/img/project/hydrologic_modeling.jpg" alt="">
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">hydrologic modeling</h3>
+                                <h3 class="a1" data-animate="fadeInDown">Hydrologic Modeling</h3>
                                 <a href="/projects/hydrologic_modeling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
@@ -211,10 +207,10 @@
             
                 <div class="portfolio-item graphic-design">
                     <div class="he-wrap tpl6">
-                    <img src="/assets/img/project/sharp.jpg" alt="">
+                    <img src="/assets/img/project/streamflow_forecasting.jpg" alt="">
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">SHARP</h3>
+                                <h3 class="a1" data-animate="fadeInDown">Streamflow Forecasting</h3>
                                 <a href="/projects/streamflow_forecasting" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
@@ -223,11 +219,11 @@
             
                 <div class="portfolio-item graphic-design">
                     <div class="he-wrap tpl6">
-                    <img src="/assets/img/project/storylines.jpg" alt="">
+                    <img src="/assets/img/project/hydrologic_storylines.jpg" alt="">
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">storylines</h3>
-                                <a href="/projects/storylines" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                                <h3 class="a1" data-animate="fadeInDown">Quantitative Hydrologic Storylines</h3>
+                                <a href="/projects/hydrologic_storylines" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
                     </div><!-- he wrap -->
@@ -235,10 +231,10 @@
             
                 <div class="portfolio-item graphic-design">
                     <div class="he-wrap tpl6">
-                    <img src="/assets/img/project/icar.jpg" alt="">
+                    <img src="/assets/img/project/quasi-dynamical_downscaling.jpg" alt="">
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">ICAR</h3>
+                                <h3 class="a1" data-animate="fadeInDown">Quasi-dynamical Downscaling</h3>
                                 <a href="/projects/quasi-dynamical_downscaling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
@@ -247,11 +243,11 @@
             
                 <div class="portfolio-item graphic-design">
                     <div class="he-wrap tpl6">
-                    <img src="/assets/img/project/gmet.jpg" alt="">
+                    <img src="/assets/img/project/meteorological_datasets.jpg" alt="">
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">GMET</h3>
-                                <a href="/projects/parameter_estimation" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                                <h3 class="a1" data-animate="fadeInDown">Meteorological Datasets</h3>
+                                <a href="/projects/meterological_forcings" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
                     </div><!-- he wrap -->
@@ -262,7 +258,7 @@
                     <img src="/assets/img/project/streamflow_routing.jpg" alt="">
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">streamflow routing</h3>
+                                <h3 class="a1" data-animate="fadeInDown">Streamflow Routing</h3>
                                 <a href="/projects/streamflow_routing" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
@@ -274,7 +270,7 @@
                     <img src="/assets/img/project/oconus.jpg" alt="">
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">OCONUS</h3>
+                                <h3 class="a1" data-animate="fadeInDown">Alaska and Hawaii climate projections</h3>
                                 <a href="/projects/OCONUS" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
@@ -283,11 +279,11 @@
             
                 <div class="portfolio-item graphic-design">
                     <div class="he-wrap tpl6">
-                    <img src="/assets/img/project/mpr-flex.jpg" alt="">
+                    <img src="/assets/img/project/parameter_estimation.jpg" alt="">
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">MPR-flex</h3>
-                                <a href="/projects/mprflex" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                                <h3 class="a1" data-animate="fadeInDown">Parameter Estimation</h3>
+                                <a href="/projects/parameter_estimation" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
                     </div><!-- he wrap -->
