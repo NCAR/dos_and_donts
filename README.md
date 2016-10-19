@@ -11,7 +11,8 @@ Website contributions
 *   add date break with papers
 *   add appropriate links from project to dataset and from datasets to projects
 *   not all collaborators have email addresses or pictures, add those
-*   separate "models" and "projects"
+*   separate between "models" and "projects" ok
+*   want to migrate it to https://github.com/NCAR/computational_hydrology instead?
 
 ###Contributors, please consider the following:
 
