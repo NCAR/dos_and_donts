@@ -4,12 +4,18 @@
 		{{ post.content }}
             <p><b>Release date: </b> {{ post.releasedate }}</p>
             <p><b>Authors:</b> {{ post.authorlist }}</p>
+
             {% if post.doi %}
 		<p><b>DOI: </b>{{ post.doi }}</p>
             {% endif %}
+
             <p><b>Download at: </b> <a href="{{post.download}}"> {{ post.download }}</a></p>
             <p><b>Described in: </b> <a href="{{ post.paperlink }}">{{ post.paperdescribe }}</a></p>
-	    <p><b>Models used: </b> <a href="{{ post.modellink | prepend: site.baseurl | prepend: "/models/" }}">{{ post.modellink }}</a></p>	
+
+	    {% if post.modellink %}
+            <p><b>Model used: </b> <a href="{{ post.modellink | prepend: site.baseurl | prepend: "/models/" }}">{{ post.modellink }}</a></p>	
+	    {% endif %}
+
 	<div class="hline"></div>
 {% endfor %}
 
