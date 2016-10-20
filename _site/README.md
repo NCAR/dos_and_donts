@@ -7,10 +7,8 @@ Website contributions
 *   Add group name throughout
 *   Add NCAR/RAL logo throughout
 *   Add USBR and USACE logo also on the top
-*   change the way contacts are done on project pages (add a mailbox link, or just link to person's webpage)
 *   add date break with papers
 *   add appropriate links from project to dataset and from datasets to projects
-*   not all collaborators have email addresses or pictures, add those
 *   separate between "models" and "projects" ok
 *   want to migrate it to https://github.com/NCAR/computational_hydrology instead?
 
@@ -21,8 +19,8 @@ Website contributions
 *   photo ok?
 *   publications to add?  template in _posts/papers/_2000-01-01_template.md (all you need to do is make a new file with your publication and add it to this folder)
 *   check project pages (others to add, e.g. GARD?, HEC HMS)
-*   check or add datasets
-*   dataset descriptions (write or check they are ok)
+*   check datasets, any to add?
+*   check/rewirte dataset descriptions
 *   collaborators that need to be added/removed? (e.g., USGS folks)
 
 

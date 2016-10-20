@@ -8,6 +8,7 @@ doi: 10.5065/D6TH8JR2
 download: http://dx.doi.org/10.5065/D6TH8JR2
 paperdescribe: "Newman et al., JHM, 2015"
 paperlink: http://dx.doi.org/10.1175/JHM-D-15-0026.1
+modellink: GMET
 tags: [datasets,datasets_GMET]
 categories:
 - data

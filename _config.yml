@@ -2,11 +2,11 @@
 
 # Site settings
 title: COMPUTATIONAL HYDROLOGY 
-# NCAR | RAL
+groupname: Computational Hydrology
 description: "Research to improve the fundamental building blocks on which hydrometeorological analyses and climate change assessments depend."
 
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: /Toolbox #important: start with /
+baseurl: ""  #/Toolbox #important: start with /
 url: "https://ncar.github.io/Toolbox/"
 
 # Build settings
@@ -39,8 +39,6 @@ address:
     - 3450 Mitchell Ln
     - Boulder, Colorado 80301
     - United States
-#email: hello@solidtheme.com
-#tel: +34 8493-4893
 
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
@@ -146,6 +144,15 @@ members:
         url: mailto:flehner at ucar.edu
       - title: link
         url: http://www.climate.unibe.ch/~lehner/
+  - name: Joe Hamman
+    position: Postdoctoral Researcher
+    text: "tag line coming soon, tag line coming soon"
+    img: default.jpg
+    social:
+      - title: envelope #use for email address
+        url: mailto:jhamman at ucar.edu
+      - title: link
+        url: https://staff.ucar.edu/users/jhamman
   - name: Kevin Sampson
     position: Associate Scientist III
     text: "tag line coming soon, tag line coming soon"
@@ -323,7 +330,7 @@ sponsors:
 
     
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: ""
+about: "IS this still here"
 
 # Testimonial content. Shown on Home and About page. 
 #testimonial:
