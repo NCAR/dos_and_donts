@@ -8,7 +8,6 @@ Website contributions
 *   Add NCAR/RAL logo throughout
 *   Add USBR and USACE logo also on the top
 *   add date break with papers
-*   add appropriate links from project to dataset and from datasets to projects
 *   separate between "models" and "projects" ok
 *   want to migrate it to https://github.com/NCAR/computational_hydrology instead?
 
@@ -26,7 +25,8 @@ Website contributions
 
 ### Script/design improvements
 *   Double check that design is okay at different widths (e.g., data, research pages don’t do well when wide, might want to force figures to be a certain size?)
-*   redo if statements in _layout/project.html (collects papers for each project)
+*   redo if statements in _layout/project.html (collects papers and data for each project)
+*   could combine citationdata.html and citationpaper.html, but if statements in data version not right (yet)
 *   fix error "ERROR /assets/img/modelchain@2x.png not found."
 *   fix tagline so wraps similarly to regardless of size
 
