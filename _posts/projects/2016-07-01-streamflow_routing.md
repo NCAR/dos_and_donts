@@ -10,10 +10,10 @@ img2: mizuRoute.png
 factsheet1: mizuRoute_1pg.pdf
 factsheet2: mizuRoute_factsheet_2016_10.pdf
 sponsors: U.S. Army Corps of Engineers, Bureau of Reclamation
-website: www.ral.ucar.edu/projects/toolbox/mizuRoute
 teamline1: "NCAR: Martyn Clark (PI), Naoki Mizukami"
 teamline2: "University of Washington: Bart Nijssen"
 contacts: "Contact:  Martyn Clark - mclark@ucar.edu | Julie Vano - jvano@ucar.edu"
+modellink: mizuRoute
 tags: [projects]
 ---
 

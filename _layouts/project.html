@@ -10,7 +10,7 @@ layout: default
             <div class="spacing"></div>
 
             {{ content }}
-	    <img src="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ page.img2 }}" alt="">
+	    {% if page.img2 %}<img src="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ page.img2 }}" alt="">{% endif %}
 	    {% if page.img3 %}
             	<img src="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ page.img3 }}" alt="">
 	    {% endif %}
@@ -40,13 +40,18 @@ layout: default
 
 	<div class="col-lg-4 col-lg-offset-1">
             <div class="spacing"></div>
-            <h4>More Information At</h4>
+            <h4>More Information</h4>
             <div class="hline"></div> 
 	&nbsp
-	<p> Website: &nbsp <a href="{{ page.website }}">{{ page.website }}</a></p> 
+	{% if page.modellink %} <p> Model information: &nbsp  <a href="{{ page.modellink | prepend: site.baseurl | prepend: "/models/" }}">{{ page.modellink }}</a></p>{% endif %}
+	{% if page.projectlink %}<p> Project information:  &nbsp  <a href="{{ page.projectlink | prepend: site.baseurl | prepend: "/projects/" }}">{{ page.projectlink }}</a></p>{% endif %}
+	{% if page.modelhomepage %} <p> Model homepage: &nbsp <a href="{{ page.modelhomepage }}">{{ page.modelhomepage }}</a></p> {% endif %}
+
+	{% if page.factsheet1 %}
 	<p> Factsheets: &nbsp 
         <a href="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ page.factsheet1 }}"> 1-Pager</a> &nbsp
         <a href="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ page.factsheet2 }}">  2-Pager </a> (same info as this page)</p> 
+	{% endif %}
 
         <!-- if statements below are not ideal, should find way to add variable into assign--> 
         {% if page.ref == "mizuRoute" %}

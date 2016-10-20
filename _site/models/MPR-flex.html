@@ -73,55 +73,7 @@
         <div class="col-lg-5 col-lg-offset-1">
             <div class="spacing"></div>
 
-            <h1 id="removing-artificial-barriers-in-nationwide-hydrologic-simulations">Removing Artificial Barriers in Nationwide Hydrologic Simulations</h1>
-
-<h4 id="the-challenge"><strong>The challenge:</strong></h4>
-<p>Hydrologic models estimate the exchange of water and energy at the land surface using physically-based equations that represent the features of different locations (e.g., forests v. grasslands) based on parameters that vary spatially. While many parameter values are based on satellite information or geological surveys, others are estimated through calibration (e.g., adjust parameter values to match historical streamflow). Parameter estimation over large domains is especially difficult. Consequently, many current large scale hydrologic assessments rely on spatially inconsistent parameter fields (left panels in figure below) resulting from individual basin calibration, or spatially constant parameters resulting from the adoption of default or a-priori estimates.</p>
-
-<h4 id="facing-this-challenge"><strong>Facing this challenge:</strong></h4>
-
-<p>Scientists and engineers in RAL’s Hydrometeorological Applications Program at the National Center for Atmospheric Research are collaborating with the U.S. Army Corps of Engineers, the Bureau of Reclamation, and the University of Washington to build a model-independent, flexible parameter estimation tool that enables continental-domain applications of multiple hydrologic models in a spatially consistent way.</p>
-
-<h4 id="scientific-advances"><strong>Scientific advances:</strong></h4>
-
-<p>Parameter estimation over the United States is being improved by:</p>
-
-<ul>
-  <li>
-    <p>Development of a stand-alone software package that can generate optimized, spatially continuous parameter fields for multiple hydrologic models. This parameter estimation tool, MPR-flex, uses the Multi-scale Parameter Regionalization (MPR) technique, first developed for the meso-scale Hydrologic Model (mHM) [Samaniego et al. 2010].</p>
-  </li>
-  <li>
-    <p>Improved the functionality in the MPR technique through adding a library of equations (pedo-transfer functions), which relate measurable geophysical properties of soil and vegetation to parameter values that hydrologic models use to simulate water movement and storage in the soil.</p>
-  </li>
-  <li>
-    <p>Modifications in how parameters are estimated spatially. Instead of conducting simulations for every grid, obtain optimized transfer function coefficients for key hydrologic model parameters, based on several hundred unimpaired headwater basins across the United States.  Then, parameter values in locations that are ungauged (and therefore cannot be calibrated) can be estimated using these optimized transfer function coefficients.</p>
-  </li>
-  <li>
-    <p>Discovery of viable parameters that can be based on a combination of measureable properties (e.g., root-zone depth is based on vegetation-soil interaction, base flow parameter depends on topography and saturated hydraulic conductivity). MPR-flex is designed to ingest various geophysical properties such as soil, topography, vegetation information in the same framework, which facilitates estimation of these multifaceted parameters.</p>
-  </li>
-  <li>
-    <p>New parameter sets for the contiguous United States are generated for the VIC hydrologic model using MPR-flex (two parameter fields are illustrated in the figure).</p>
-  </li>
-</ul>
-
-<h4 id="moving-forward"><strong>Moving Forward:</strong></h4>
-
-<p>These scientific advances provide opportunities to:</p>
-
-<ul>
-  <li>
-    <p>Use MPR-flex to generate spatially distributed parameter sets for other hydrologic models (e.g., the modeling framework SUMMA).</p>
-  </li>
-  <li>
-    <p>Conduct spatially consistent, continental-domain climate impact assessments using multiple hydrologic models.</p>
-  </li>
-  <li>
-    <p>Better understand and evaluate parameter uncertainty in hydrologic models by varying assumptions made during the parameter estimation process.</p>
-  </li>
-  <li>
-    <p>Use MPR-flex to estimate parameters in Alaska and Hawaii.</p>
-  </li>
-</ul>
+            <p>MPR-flex is a model-independent, flexible parameter estimation tool that enables continental-domain applications of multiple hydrologic models in a spatially consistent way.</p>
 
 	    <img src="/assets/img/project/mpr-flex.png" alt="">
 	    
@@ -151,13 +103,14 @@
 
 	<div class="col-lg-4 col-lg-offset-1">
             <div class="spacing"></div>
-            <h4>More Information At</h4>
+            <h4>More Information</h4>
             <div class="hline"></div> 
 	&nbsp
-	<p> Website: &nbsp <a href="www.ral.ucar.edu/projects/toolbox/MPRflex">www.ral.ucar.edu/projects/toolbox/MPRflex</a></p> 
-	<p> Factsheets: &nbsp 
-        <a href="/assets/img/project/comingsoon.pdf"> 1-Pager</a> &nbsp
-        <a href="/assets/img/project/mpr-flex_factsheet_2016_10.pdf">  2-Pager </a> (same info as this page)</p> 
+	
+	<p> Project information:  &nbsp  <a href="/projects/parameter_estimation">parameter_estimation</a></p>
+	
+
+	
 
         <!-- if statements below are not ideal, should find way to add variable into assign--> 
         
@@ -168,8 +121,15 @@
         
         
         
+         <p> Papers: </p> 
         
-        
+<ul> Samaniego, L., R. Kumar, and S. Attinger, 2010: Multiscale parameter regionalization of a grid‐based hydrologic model at the mesoscale. <i> Water Resources Research</i>, 
+	 <b>26</b>, 
+	W05523,  
+	 doi:<a href=http://dx.doi.org/10.1029/2008WR007327>10.1029/2008WR007327</a> 
+	</ul>
+&nbsp
+
 
 
         </div>
@@ -235,8 +195,8 @@
                     <img src="/assets/img/project/intermediate-complexity_downscaling.jpg" alt="">
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">Intermediate Complexity Downscaling</h3>
-                                <a href="/projects/quasi-dynamical_downscaling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                                <h3 class="a1" data-animate="fadeInDown">Intermediate-Complexity Downscaling</h3>
+                                <a href="/projects/intermediate-complexity_downscaling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
                     </div><!-- he wrap -->
@@ -248,7 +208,7 @@
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
                                 <h3 class="a1" data-animate="fadeInDown">Meteorological Datasets</h3>
-                                <a href="/projects/meterological_forcings" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                                <a href="/projects/meteorological_datasets" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
                     </div><!-- he wrap -->

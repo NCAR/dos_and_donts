@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "Intermediate Complexity Downscaling"
+title:  "Intermediate-Complexity Downscaling"
 ref: ICAR
 date:   2016-08-01 16:55:00
 categories:
@@ -9,14 +9,13 @@ img: intermediate-complexity_downscaling.jpg
 img2: icar.png
 factsheet1: comingsoon.pdf
 factsheet2: icar_factsheet_2016_10.pdf
-thumb: icar.jpg
 sponsors: U.S. Army Corps of Engineers, Bureau of Reclamation, National Science Foundation (check)
-website: https://www.ral.ucar.edu/projects/icar
 teamline1: "NCAR: Ethan Gutmann (PI), Martyn Clark, Trude Eidhammer, Roy Rasmussen"
 teamline2: "Uni Research (Bergen, Norway):  Idar Bartstad"
 teamline3: "U.S. Army Corps of Engineers: Jeff Arnold"
 teamline4: "Bureau of Reclamation: Levi Brekke"
 contacts: "Contact: Ethan Gutmann- gutmann@ucar.edu | Julie Vano - jvano@ucar.edu"
+modellink: ICAR
 tags: [projects]
 ---
 

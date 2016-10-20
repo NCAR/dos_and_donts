@@ -9,13 +9,12 @@ img: meteorological_datasets.jpg
 img2: gmet.png
 factsheet1: gmet_1pg.pdf
 factsheet2: gmet_factsheet_2016_10.pdf
-thumb: gmet.png
 sponsors: U.S. Army Corps of Engineers, Bureau of Reclamation
-website: www.ral.ucar.edu/projects/toolbox/gmet
 teamline1: "NCAR: Martyn Clark (PI), Andrew Newman, Andy Wood, Ethan Gutmann"
 teamline2: "U.S. Army Corps of Engineers: Jeff Arnold"
 teamline3: "Bureau of Reclamation: Levi Brekke"
 contacts: "Contact: Andy Newman - anewman@ucar.edu | Julie Vano - jvano@ucar.edu"
+modellink: GMET
 tags: [projects]
 ---
 

@@ -73,52 +73,9 @@
         <div class="col-lg-5 col-lg-offset-1">
             <div class="spacing"></div>
 
-            <h1 id="advances-in-generating-locally-relevant-climate-change-information">Advances in Generating Locally Relevant Climate Change Information</h1>
+            <p>ICAR is a simplified atmospheric model designed primarily for climate downscaling, atmospheric sensitivity tests, and hopefully educational uses.</p>
 
-<h4 id="the-challenge"><strong>The challenge:</strong></h4>
-
-<p>While climate change is occurring globally, changes are felt locally.  However, global climate models do not produce information at locally relevant scales.  Therefore, water managers and planners use “downscaling” methods to convert global climate data to decision-relevant spatial scales.</p>
-
-<p>One of the more reliable ways to perform this downscaling is through the use of high-resolution regional climate models; however, such models are too computationally expensive to be run for long time periods.  As a result, water managers often rely on simpler, statistical methods to downscale climate data. Such statistical methods however do not include atmospheric dynamics, and, therefore, may not represent local climate changes as well.</p>
-
-<h4 id="facing-this-challenge"><strong>Facing this challenge:</strong></h4>
-
-<p>Scientists and engineers in RAL’s Hydrometeorological Applications Program at the National Center for Atmospheric Research are collaborating with the U.S. Army Corps of Engineers, the Bureau of Reclamation, and the University of Bergen to develop a more computationally efficient form of regional climate modeling, the Intermediate Complexity Atmospheric Research model (ICAR).  ICAR combines large-scale atmospheric circulation from climate models with Linear Mountain Wave theory, a mathematical solution for determining the effect of mountains on atmospheric winds, to generate wind fields and calculate the motion of air parcels within the atmosphere. Then ICAR performs detailed full-physics calculations relating three-dimensional water vapor and temperature to the formation of clouds, rain, and snow.  The resulting precipitation predictions are similar to those predicted by a full-complexity regional climate model (WRF), and to the PRISM observed dataset (illustrated in the figure). The source code for ICAR, along with a growing library of documentation, is freely available at https://www.github.com/NCAR/icar.</p>
-
-<h4 id="scientific-advances"><strong>Scientific advances:</strong></h4>
-
-<p>ICAR provides a new way of generating local climate information that captures local atmospheric dynamics and is computationally efficient, freeing water managers and planners from needing to choose between statistical and dynamical downscaling methods.</p>
-
-<ul>
-  <li>
-    <p><em>Physical processes.</em> ICAR provides a method of downscaling that is derived from physical principles, and incorporates some of the most advanced cloud and precipitation calculations in the scientific literature.</p>
-  </li>
-  <li>
-    <p><em>Computational efficiency.</em> ICAR simulations can be performed 100 to 1000 times faster than a comparable simulation with a traditional regional climate model.</p>
-  </li>
-  <li>
-    <p><em>Skill in current climate.</em> ICAR’s representation of the precipitation that forms mountain snowpack, which is of great importance to those managing water resources in the western U.S., is excellent. ICAR explains 85-95% of the variability represented in a much more complex regional climate model, and is highly correlated with observed precipitation.</p>
-  </li>
-  <li>
-    <p><em>Flexibility.</em> ICAR has been designed to use a variety of model inputs and can easily be used to evaluate the influence of different physical assumptions on the downscaling process.</p>
-  </li>
-</ul>
-
-<h4 id="moving-forward"><strong>Moving Forward:</strong></h4>
-
-<ul>
-  <li>
-    <p>Current work is focused on improving the skill and physical process representation of ICAR, particularly for convective precipitation and land surface feedbacks.</p>
-  </li>
-  <li>
-    <p>ICAR is being used to generate downscaled climate datasets for the United States, including Alaska and Hawaii.</p>
-  </li>
-  <li>
-    <p>ICAR is being evaluated in a variety of environments, including tests in the Alps, Norway, the Himalayas, and Chile.</p>
-  </li>
-</ul>
-
-	    <img src="/assets/img/project/icar.png" alt="">
+	    
 	    
 
         </div>
@@ -146,13 +103,14 @@
 
 	<div class="col-lg-4 col-lg-offset-1">
             <div class="spacing"></div>
-            <h4>More Information At</h4>
+            <h4>More Information</h4>
             <div class="hline"></div> 
 	&nbsp
-	<p> Website: &nbsp <a href="https://www.ral.ucar.edu/projects/icar">https://www.ral.ucar.edu/projects/icar</a></p> 
-	<p> Factsheets: &nbsp 
-        <a href="/assets/img/project/comingsoon.pdf"> 1-Pager</a> &nbsp
-        <a href="/assets/img/project/icar_factsheet_2016_10.pdf">  2-Pager </a> (same info as this page)</p> 
+	
+	<p> Project information:  &nbsp  <a href="/projects/intermediate-complexity_downscaling">intermediate-complexity_downscaling</a></p>
+	 <p> Model homepage: &nbsp <a href="https://www.github.com/NCAR/icar">https://www.github.com/NCAR/icar</a></p> 
+
+	
 
         <!-- if statements below are not ideal, should find way to add variable into assign--> 
         
@@ -163,8 +121,36 @@
         
         
         
+         <p> Papers: </p> 
         
-        
+<ul> Gutmann, E., I. Barstad, M.P. Clark, J. Arnold, and R. Rasmussen, 2016: The Intermediate Complexity Atmospheric Research Model. <i> Journal of Hydrometeorology</i>, 
+	 <b>17</b>, 
+	957–973,  
+	 doi:<a href=http://dx.doi.org/10.1175/JHM-D-15-0155.1>10.1175/JHM-D-15-0155.1</a> 
+	</ul>
+&nbsp
+
+<ul> Gutmann, E., T. Pruitt, M.P. Clark, L. Brekke, J.R. Arnold, D.A. Raff, and R.M. Rasmussen, 2014: An intercomparison of statistical downscaling methods used for water resource assessments in the United States. <i> Water Resources Research</i>, 
+	 <b>50</b>, 
+	7167–7186,  
+	 doi:<a href=http://dx.doi.org/10.1002/2014WR015559>10.1002/2014WR015559</a> 
+	</ul>
+&nbsp
+
+<ul> Gutmann, E.D., R.M. Rasmussen, C. Liu, K. Ikeda, D.J. Gochis, M.P. Clark, J. Dudhia, and G. Thompson, 2012: A Comparison of Statistical and Dynamical Downscaling of Winter Precipitation over Complex Terrain. <i> Journal of Climate</i>, 
+	 <b>25</b>, 
+	262–281,  
+	 doi:<a href=http://dx.doi.org/10.1175/2011JCLI4109.1>10.1175/2011JCLI4109.1</a> 
+	</ul>
+&nbsp
+
+<ul> Barstad, I., and S. Gronas, 2006: Dynamical structures for southwesterly airflow over southern Norway: the role of dissipation. <i> Tellus Series a-Dynamic Meteorology and Oceanography</i>, 
+	 <b>58</b>, 
+	2-18,  
+	 doi:<a href=http://dx.doi.org/doi:10.1111/j.1600- 0870.2006.00152.x>doi:10.1111/j.1600- 0870.2006.00152.x</a> 
+	</ul>
+&nbsp
+
 
 
         </div>
@@ -230,8 +216,8 @@
                     <img src="/assets/img/project/intermediate-complexity_downscaling.jpg" alt="">
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">Intermediate Complexity Downscaling</h3>
-                                <a href="/projects/quasi-dynamical_downscaling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                                <h3 class="a1" data-animate="fadeInDown">Intermediate-Complexity Downscaling</h3>
+                                <a href="/projects/intermediate-complexity_downscaling" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
                     </div><!-- he wrap -->
@@ -243,7 +229,7 @@
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
                                 <h3 class="a1" data-animate="fadeInDown">Meteorological Datasets</h3>
-                                <a href="/projects/meterological_forcings" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                                <a href="/projects/meteorological_datasets" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                             </div><!-- he bg -->
                         </div><!-- he view -->		
                     </div><!-- he wrap -->

@@ -12,12 +12,12 @@ factsheet1: comingsoon.pdf
 factsheet2: sharp_factsheet_2016_10.pdf
 thumb: sharp.jpg
 sponsors:  Bureau of Reclamation, NOAA, NASA, National Science Foundation, U.S. Army Corps of Engineers (check, spell out?)
-website: https://www.ral.ucar.edu/projects/sharp
 teamline1: "NCAR: Andy Wood (PI), Martyn Clark (Co-PI), Pablo Mendoza, Andy Newman, Ethan Gutmann"
 teamline2: "University of Washington: Bart Nijssen, Elizabeth Clark"
 teamline3: "U.S. Army Corps of Engineers: Jeff Arnold"
 teamline4: "Bureau of Reclamation: Levi Brekke" 
 contacts: "Contact:  Andy Wood - andywood@ucar.edu | Julie Vano - jvano@ucar.edu"
+modellink: SHARP
 tags: [projects]
 ---
 
