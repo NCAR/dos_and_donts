@@ -9,7 +9,7 @@
             {% endif %}
             <p><b>Download at: </b> <a href="{{post.download}}"> {{ post.download }}</a></p>
             <p><b>Described in: </b> <a href="{{ post.paperlink }}">{{ post.paperdescribe }}</a></p>
-	    <p><b>Models used: </b> <a href="{{"/models/GMET" | prepend: site.baseurl }}">{{ post.modellink }}</a></p>	
+	    <p><b>Models used: </b> <a href="{{ post.modellink | prepend: site.baseurl | prepend: "/models/" }}">{{ post.modellink }}</a></p>	
 	<div class="hline"></div>
 {% endfor %}
 
