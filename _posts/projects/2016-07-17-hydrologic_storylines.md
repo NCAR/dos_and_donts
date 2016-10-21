@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "Quantitative Hydrologic Storylines"
+title:  "Hydrologic storylines for evaluating climate impacts"
 ref: storylines
 date:   2016-08-03 16:54:46
 categories:

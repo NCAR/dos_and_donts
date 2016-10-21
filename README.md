@@ -8,7 +8,6 @@ Website contributions
 *   Add NCAR/RAL logo throughout
 *   Add USBR and USACE logo also on the top
 *   add date break with papers
-*   separate between "models" and "projects" ok
 *   want to migrate it to https://github.com/NCAR/computational_hydrology instead?
 
 ###Contributors, please consider the following:
