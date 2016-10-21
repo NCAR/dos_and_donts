@@ -317,6 +317,10 @@ collaborators:
 
 # Sponsor information. Shown on Home and About pages.
 sponsors:
+  - name: NSF
+    img: NSF.jpg
+  - name: UCAR_NCAR
+    img: ucar_ncar.jpg
   - name: USACE
     img: USACE.jpg
   - name: Bureau
@@ -325,8 +329,6 @@ sponsors:
     img: NOAA.jpg
   - name: NASA
     img: NASA.jpg
-  - name: NSF
-    img: NSF.jpg
 
     
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
