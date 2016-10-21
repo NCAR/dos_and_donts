@@ -3,12 +3,8 @@ Website contributions
 
 ###Ideas for future changes (content):
 
-*   modify the home page figure (Andy Wood had suggestion)
-*   Add group name throughout
-*   Add NCAR/RAL logo throughout
-*   Add USBR and USACE logo also on the top
-*   add date break with papers
-*   want to migrate it to https://github.com/NCAR/computational_hydrology instead?
+*   modify the home page figure (Andy had suggestion, added photos as strawman)
+*   want to migrate it to https://github.com/NCAR/computational-hydrology instead? (would match https://ral.ucar.edu/hap/computational-hydrology)
 
 ###Contributors, please consider the following:
 
@@ -17,7 +13,7 @@ Website contributions
 *   photo ok?
 *   publications to add?  template in _posts/papers/_2000-01-01_template.md (all you need to do is make a new file with your publication and add it to this folder)
 *   check project pages (others to add, e.g. GARD?, HEC HMS)
-*   check datasets, any to add?
+*   check datasets, any to add? (e.g., WRF for Alaska)
 *   check/rewirte dataset descriptions
 *   collaborators that need to be added/removed? (e.g., USGS folks)
 
