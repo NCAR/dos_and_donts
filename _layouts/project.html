@@ -44,7 +44,7 @@ layout: default
             <div class="hline"></div> 
 	&nbsp
 	{% if page.modellink %} <p> Model information: &nbsp  <a href="{{ page.modellink | prepend: site.baseurl | prepend: "/models/" }}">{{ page.modellink }}</a></p>{% endif %}
-	{% if page.projectlink %}<p> Project information:  &nbsp  <a href="{{ page.projectlink | prepend: site.baseurl | prepend: "/projects/" }}">{{ page.projectlink }}</a></p>{% endif %}
+	{% if page.projectlink %}<p> Project information:  &nbsp  <a href="{{ page.projectlink | prepend: "/projects/" | prepend: site.baseurl }}">{{ page.projectlink }}</a></p>{% endif %}
 	{% if page.modelhomepage %} <p> Model homepage: &nbsp <a href="{{ page.modelhomepage }}">{{ page.modelhomepage }}</a></p> {% endif %}
 
 	{% if page.factsheet1 %}
