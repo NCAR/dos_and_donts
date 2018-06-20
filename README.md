@@ -1,5 +1,5 @@
-Future location for the DOS and DON'TS
+#dos_and_donts
 
-A platform for sharing information to increase the utility and appropriate use of climate change information in water resource planning and management.
+Future location for the DOS and DON'TS, a platform for sharing information to increase the utility and appropriate use of climate change information in water resource planning and management.
 
 If you would like to view the beta version, please contact jvano at ucar.edu.
