@@ -1,2 +1,4 @@
-# Toolbox
-A website and documentation for a toolbox of methods, models, and systems constructed to advance hydrologic simulation, prediction, and support for water management applications, including climate change impact assessments and streamflow forecasting.
+# Future location for the DOS and DON'TS
+A platform for sharing information to promote the appropriate use of climate change information to increase the utility and appropriate use of climate change information in water resource planning and management.
+
+If you would like access to the beta version, please contact jvano at ucar.edu.
