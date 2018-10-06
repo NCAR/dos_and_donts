@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+{% include wrap.html %}
+
+<div class="container mtb2">
+
+    {% if page.symbol == "dont" %}<h2><span class="glyphicon glyphicon-remove-circle" style="color:FireBrick"></span> {{ page.dodont }}</h2>{% endif %}
+    {% if page.symbol == "do" %}<h2><span class="glyphicon glyphicon-ok-circle" style="color:SeaGreen"></span> {{ page.dodont }}</h2>{% endif %}
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <!--<div class="spacing"></div>-->
+        </div>
+
+        <div class="col-lg-9 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-offset-1">
+            <div class="spacing"></div>
+
+            {% if page.whyp1 %}<h3>Why</h3>
+            <p>{{ page.whyp1 }}</p>
+            <p>{{ page.whyp2 }}</p>
+            <p>{{ page.whyp3 }}</p>{% endif %}
+
+            </div>
+        </div>
+            <hr>
+<!--            <p> Thanks for expressing interest in this guideline.  More details will be included in version 2.0, coming soon.  If you would like to be updated when more information is posted, let us know (submit your email below). </p>
+            <div class="form-group">
+               <label for="InputEmail1">Email</label>
+               <input type="email" class="form-control" id="exampleInputEmail1">
+               <button type="submit" class="btn btn-theme">Submit</button>
+            </div>
+
+            <p> PLEASE NOTE: The submit function is NOT currently working.  Use this <a href="mailto:jvano @ucar.edu?subject=DOS AND DON'TS request on Model Selection guidelines, {{ page.ref }}&body=Email this address when more information is available. %0d%0d<If you have additional comments, please share them here. Thank you for your feedback!>">link</a> to send an email instead. </p>  
+-->
+            <p> Thanks for expressing interest in this guideline.  More details will be included in version 2.0, coming soon.  If you would like to be updated when more information is posted, let us know (click button below)... </p>
+            <center>
+            <a href="mailto:jvano @ucar.edu?subject=DOS AND DON'TS request on Model Selection guidelines, {{ page.ref }}&body=Sending this email gives us your address to send a notice when more information is available. %0d%0d If you have additional comments, please share them here. Thank you for your feedback!" class="btn btn-theme">submit your email and feedback </a> </p>
+            <a href="{{ "/v1.0/" | prepend: site.baseurl }}" ><h4>Return to list of <b>DOS AND DON'TS</h4></b></a></h2>
+            </center>
+            <br><br>
+        </div>
+    
+    </div><! --/row -->
+</div><! --/container -->
+
+
+

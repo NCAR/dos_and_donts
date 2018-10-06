@@ -1,0 +1,121 @@
+### GENERAL SETTINGS ###
+
+# Site settings
+title: DOS AND DON'TS BETA VERSION
+groupname: DOS AND DON'TS
+description: "a set of guidelines to increase the utility and appropriate use of climate change information in water resource planning and management"
+version: v1.0
+
+analytics: #Google analytics code in the format XX-nnnnnnnn-n
+baseurl:   #'' should be ok, if doesn't work try a /
+url: "https://ncar.github.io/dos_and_donts/"
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title
+excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
+
+colors:  #in hex code if not noted else
+  primary: "#014f7e" #"#00b3fe" #"#F70031"
+  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
+  secondary: "#232b34"  #"#384452" #"#33004D"
+  link: "#016fb1" #"#428bca"
+  link_hover: "#016fb1" #"#01b2fe"
+  footer_heading: "#ffffff"
+  footer_content: "#bfc9d3"
+
+
+### CONTACT SETTINGS ###
+
+# Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
+social:
+  - title: facebook
+    url:
+  - title: twitter
+    url:
+
+# Postal address (add as many lines as necessary). Shown in footer and on Contact page.
+address:
+  - lines:
+    - 3450 Mitchell Ln
+    - Boulder, Colorado 80301
+    - United States
+
+# Contact information
+email: jvano@ucar.edu
+
+### GENERAL DATA FOR VARIOUS LOCATIONS ###
+
+# Contributor information. Shown on About page.
+contributors:
+  - name: Julie Vano
+    position: NCAR
+    img: julie.jpg
+    social:
+      - title: envelope #use for email address
+        url: mailto:jvano at ucar.edu
+      - title: link
+        url: https://staff.ucar.edu/users/jvano
+  - name: Jeff Arnold
+    position: U.S. Army Corps of Engineers
+    img: jeffarnold.jpg
+    social:
+      - title: envelope #use for email address
+        url: mailto:Jeffrey.R.Arnold at usace.army.mil
+  - name: Bart Nijssen
+    position: University of Washington
+    text: Research Professor
+    img: bartnijssen.jpg
+    social:
+      - title: link
+        url: http://uw-hydro.github.io/current_member/bart_nijssen
+  - name: Martyn Clark
+    position: NCAR
+    img: martyn.jpg
+    social:
+      - title: link
+        url: https://staff.ucar.edu/users/mclark
+  - name: Andy Wood
+    position: NCAR
+    img: andywood.jpg
+    social:
+      - title: link
+        url: https://staff.ucar.edu/users/andywood
+  - name: Ethan Gutmann
+    position: NCAR
+    img: ethan.jpg
+    social:
+      - title: link
+        url: https://staff.ucar.edu/users/gutmann
+  - name: Nans Addor
+    position: University of East Anglia
+    text: "hydrological modeling under present and future climate"
+    img: nans.jpg
+    social:
+      - title: link
+        url: https://www.researchgate.net/profile/Nans_Addor
+  - name: Joe Hamman
+    position: NCAR
+    img: joehamman.jpg
+    social:
+      - title: link
+        url: https://staff.ucar.edu/users/jhamman
+  - name: Flavio Lehner
+    position: NCAR
+    img: flaviolehner.jpg
+    social:
+      - title: link
+        url: http://climatehomes.unibe.ch/~lehner/
+
+# Sponsor information. Shown on Home and About pages.
+sponsors:
+  - name: USACE
+    img: USACE.jpg
+  - name: Bureau
+    img: USBR.jpg
+  - name: NASA
+    img: NASA.jpg
+  - name: NOAA
+    img: NOAA.jpg
+  - name: NSF
+    img: NSF.jpg

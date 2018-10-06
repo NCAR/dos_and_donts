@@ -1,0 +1,13 @@
+<a name="history" class="anchor"></a>
+<div id="cwrap">
+    <div class="container mtb3">
+            <h3><center>Brief History</center></h3>
+            {% for post in posts %}
+               <div class="spacing"></div>
+                  <h4>{{ post.title }}</h4>
+                      {{ post.content }}
+                  <h5 style="color:gray"><i> posted&nbsp{{ post.date | date: '%B %d, %Y' }}</i></h5>
+               <div class="hline"></div>
+            {% endfor %}
+    </div><! --/container -->
+</div><! --/cwrap -->

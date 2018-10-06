@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{% include header.html %}
+  {{ content }}
+
+{% include principles.html title="Guiding Principles" limit=3 %}
+{% include structure.html title="Guidelines Structure" limit=3 %}
+
+{% assign posts = site.tags.updates %}
+{% include history.html %}
+
+{% include contributors.html %}
+{% include participation.html title="Join the Conversation" %}
+
+{% include sponsors.html %}

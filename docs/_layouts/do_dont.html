@@ -1,0 +1,134 @@
+---
+layout: default
+---
+
+{% include wrap.html %}
+
+<div class="container mtb2">
+
+<!--<h2>{% if page.img2 %}<img src="{{ "/assets/img/dos_donts/" | prepend: site.baseurl }}{{ page.img2 }}" alt="" height="5%" width="5%">{% endif %}{{ page.dodont }}</h2>--> 
+
+    {% if page.symbol == "dont" %}<h2><span class="glyphicon glyphicon-remove-circle" style="color:FireBrick"></span> {{ page.dodont }}</h2>{% endif %}
+    {% if page.symbol == "do" %}<h2><span class="glyphicon glyphicon-ok-circle" style="color:SeaGreen"></span> {{ page.dodont }}</h2>{% endif %}
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-1">
+            <!--<div class="spacing"></div>-->
+        </div>
+
+	<div class="col-lg-10">
+            <div class="spacing"></div>
+            <h3>Why</h3>
+            <p>{{ page.shortwhy }}</p>
+            <a class="btn btn-default text-toggle" data-toggle="collapse" data-target="#why" aria-expanded="false">
+               <span class="text-collapsed">more</span>
+               <span class="text-expanded">less info</span>
+               <i class="fa fa-angle-right"></i>
+            </a>
+
+	    <div id="why" class="collapse">
+	    <p>{{ page.whyp1 }}</p>
+            <p>{{ page.whyp2 }}</p>
+            <p>{{ page.whyp3 }}</p>
+            {% if page.whylink %}Learn more about:<a href="{{ page.whylink | prepend: site.baseurl }}" > {{ page.whylinkt }}</a>{% endif %}
+            {% if page.whylink2 %}; <a href="{{ page.whylink2 | prepend: site.baseurl }}" > {{ page.whylinkt2 }} </a>{% endif %}
+            {% if page.imgwhy %}<img src="{{ page.imgwhy | prepend: "/assets/img/dos_donts/" | prepend: site.baseurl }}" width="100%">{% endif %}
+	    </div>
+
+
+            {% if page.faq1 %}<hr>
+            <h3>Frequently Asked Questions</h3>
+	    <h4>{{ page.faq1 }}</h4><a class="btn btn-default text-toggle" data-toggle="collapse" data-target="#faq1" aria-expanded="false">
+               <span class="text-collapsed">answer</span>
+               <span class="text-expanded">hide answer</span>
+               <i class="fa fa-angle-right"></i>
+            </a> 
+            <div id="faq1" class="collapse">
+            <p>{{ page.faq1p1 }}</p>
+            <p>{{ page.faq1p2 }}</p>
+            <p>{{ page.faq1p3 }}</p>
+            {% if page.faq1link %}Learn more about:<a href="{{ page.faq1link | prepend: site.baseurl }}" > {{ page.faq1linkt }}</a>{% endif %}
+            {% if page.faq1link2 %}; <a href="{{ page.faq1link2 | prepend: site.baseurl }}" > {{ page.faq1linkt2 }} </a>{% endif %}
+            {% if page.imgfaq1 %}<img src="{{ page.imgfaq1 | prepend: "/assets/img/dos_donts/" | prepend: site.baseurl }}">{% endif %}
+            </div>{% endif %}
+
+
+            {% if page.faq2 %}<h4>{{ page.faq2 }}</h4>
+            <a class="btn btn-default text-toggle" data-toggle="collapse" data-target="#faq2" aria-expanded="false">
+               <span class="text-collapsed">answer</span>
+               <span class="text-expanded">hide answer</span>
+               <i class="fa fa-angle-right"></i>
+            </a>
+            <div id="faq2" class="collapse">
+            <p>{{ page.faq2p1 }}</p>
+            <p>{{ page.faq2p2 }}</p>
+            <p>{{ page.faq2p3 }}</p>
+            {% if page.faq2link %}Learn more about:<a href="{{ page.faq2link | prepend: site.baseurl }}" > {{ page.faq2linkt }}</a>{% endif %}
+            {% if page.faq2link2 %}; <a href="{{ page.faq2link2 | prepend: site.baseurl }}" > {{ page.faq2linkt2 }} </a>{% endif %}
+            {% if page.imgfaq2 %}<img src="{{ page.imgfaq2 | prepend: "/assets/img/dos_donts/" | prepend: site.baseurl }}">{% endif %}
+            </div>{% endif %}
+
+
+            {% if page.faq3 %}<h4>{{ page.faq3 }}</h4>
+            <a class="btn btn-default text-toggle" data-toggle="collapse" data-target="#faq3" aria-expanded="false">
+               <span class="text-collapsed">answer</span>
+               <span class="text-expanded">hide answer</span>
+               <i class="fa fa-angle-right"></i>
+            </a>
+            <div id="faq3" class="collapse">
+            <p>{{ page.faq3p1 }}</p>
+            <p>{{ page.faq3p2 }}</p>
+            <p>{{ page.faq3p3 }}</p>
+            {% if page.faq3link %}Learn more about:<a href="{{ page.faq3link | prepend: site.baseurl }}" > {{ page.faq3linkt }}</a>{% endif %}
+            {% if page.faq3link2 %}; <a href="{{ page.faq3link2 | prepend: site.baseurl }}" > {{ page.faq3linkt2 }} </a>{% endif %}
+            {% if page.imgfaq3 %}<img src="{{ page.imgfaq3 | prepend: "/assets/img/dos_donts/" | prepend: site.baseurl }}">{% endif %}
+            </div>{% endif %}
+
+
+            {% if page.example1 %}
+            <hr>
+            <h3>Examples</h3>
+            <h4>{{ page.example1 }}</h4>
+            <a class="btn btn-default text-toggle" data-toggle="collapse" data-target="#example1" aria-expanded="false">
+               <span class="text-collapsed">details</span>
+               <span class="text-expanded">less</span>
+               <i class="fa fa-angle-right"></i>
+            </a>
+            <div id="example1" class="collapse">
+            <p>{{ page.example1p1 }}</p>
+            <p>{{ page.example1p2 }}</p>
+            <p>{{ page.example1p3 }}</p>
+            {% if page.imgexample1 %}<img src="{{ page.imgexample1 | prepend: "/assets/img/dos_donts/" | prepend: site.baseurl }}">{% endif %}
+            </div>{% endif %}
+
+
+            {% if page.example2 %}<h4>{{ page.example2 }}</h4>
+            <a class="btn btn-default text-toggle" data-toggle="collapse" data-target="#example2" aria-expanded="false">
+               <span class="text-collapsed">details</span>
+               <span class="text-expanded">less</span>
+               <i class="fa fa-angle-right"></i>
+            </a>
+            <div id="example2" class="collapse">
+            <p>{{ page.example2p1 }}</p>
+            <p>{{ page.example2p2 }}</p>
+            <p>{{ page.example2p3 }}</p>
+            {% if page.imgexample2 %}<img src="{{ page.imgexample2 | prepend: "/assets/img/dos_donts/" | prepend: site.baseurl }}">{% endif %}
+            </div>
+            {% endif %}
+
+
+            <hr>
+            <h3>Path Forward</h3>
+            <p>{{ page.forward }}</p>
+            {% if page.forwardlink %}Learn more about:<a href="{{ page.forwardlink | prepend: site.baseurl }}" > {{ page.forwardlinkt }}</a>{% endif %}
+            {% if page.forwardlink2 %}; <a href="{{ page.forwardlink2 | prepend: site.baseurl }}" > {{ page.forwardlinkt2 }} </a>{% endif %}
+            {% if page.imgforward %}<img src="{{ page.imgforward | prepend: "/assets/img/dos_donts/" | prepend: site.baseurl }}">{% endif %}
+            <hr>
+            <center><a href="mailto:jvano @ucar.edu?subject=DOS AND DON'TS feedback on Study Design guidelines, {{ page.ref }}&body=Please add your question, example, or feedback here re: {{ page.dodont }}.  %0d%0d Thank you for your feedback!" class="btn btn-theme">submit a question, example, or feedback</a> </p>
+            <a href="{{ "/v1.0/" | prepend: site.baseurl }}" ><h4>Return to list of <b>DOS AND DON'TS</h4></b></a></h2>
+            </center>
+            <br><br>
+            Text orginally published in Vano et al., <i>Climate Services</i>, 2018
+        </div>
+    
+    </div><! --/row -->
+</div><! --/container -->

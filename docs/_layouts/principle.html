@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+{% include wrap.html %}
+
+<div class="container mtb2">
+    <div class="row">
+        <h2>{{ page.principle }}</h2>
+	<div class="col-lg-6 col-md-6">
+            <div class="spacing"></div>
+            {{ content }}
+            {% if page.example1 %}
+            <hr>
+            <h3>Examples</h3>
+            <h4><a class="text-toggle" data-toggle="collapse" data-target="#example1" aria-expanded="false">
+               <span class="text-collapsed glyphicon glyphicon-chevron-right"></span>
+               <span class="text-expanded glyphicon glyphicon-chevron-down"></span>
+            </a>{{ page.example1 }}</h4>
+
+            <div id="example1" class="collapse">
+            <p>{{ page.example1p1 }}</p>
+            <p>{{ page.example1p2 }}</p>
+            <p>{{ page.example1p3 }}</p>
+            </div>{% endif %}
+
+            {% if page.example2 %}<h4><a class="text-toggle" data-toggle="collapse" data-target="#example2" aria-expanded="false">
+               <span class="text-collapsed glyphicon glyphicon-chevron-right"></span>
+               <span class="text-expanded glyphicon glyphicon-chevron-down"></span>
+            </a>{{ page.example2 }}</h4>
+
+            <div id="example2" class="collapse">
+            <p>{{ page.example2p1 }}</p>
+            <p>{{ page.example2p2 }}</p>
+            <p>{{ page.example2p3 }}</p>
+            </div>
+            {% endif %}
+            
+            <a href="{{ "/#principles" | prepend: site.baseurl }}" class="btn btn-theme">See all guiding principles</a>
+            <br><br>
+        </div>
+    
+    </div><! --/row -->
+</div><! --/container -->

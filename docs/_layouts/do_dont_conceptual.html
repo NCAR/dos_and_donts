@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+{% include wrap.html %}
+
+<div class="container mtb2">
+
+    {% if page.symbol == "dont" %}<h2><span class="glyphicon glyphicon-remove-circle" style="color:FireBrick"></span> {{ page.dodont }}</h2>{% endif %}
+    {% if page.symbol == "do" %}<h2><span class="glyphicon glyphicon-ok-circle" style="color:SeaGreen"></span> {{ page.dodont }}</h2>{% endif %}
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <!--<div class="spacing"></div>-->
+        </div>
+
+	<div class="col-lg-9 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-offset-1">
+            <div class="spacing"></div>
+
+            {% if page.whyp1 %}<h3>Why</h3>
+            <p>{{ page.whyp1 }}</p>
+            <p>{{ page.whyp2 }}</p>
+            <p>{{ page.whyp3 }}</p>{% endif %}
+
+            </div>
+        </div>    
+            <hr>
+<!--            <p> Thanks for expressing interest in this guideline.  By clicking here, you are letting us know you would like us to develop this guidance.  If you have specific questions or examples you would like included, please share them below.  By sending us a note, we will also update you when more information is available. </p>
+            <div class="form-group">
+               <label for="InputEmail1">Email</label>
+               <input type="email" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="form-group">
+               <label for="message1">Message</label>
+               <textarea class="form-control" id="message1" rows="4"></textarea>
+               <button type="submit" class="btn btn-theme">Submit</button>
+            </div>
+            <p> PLEASE NOTE: This submit functionality is currently NOT working.  Use this <a href="mailto:jvano @ ucar.edu">link</a> to send an email instead. </p> 
+
+            <a href="{{ "/v1.0/" | prepend: site.baseurl }}" class="btn btn-theme">Return to list of DOS and DON'TS</a>
+-->
+            <p> Thanks for expressing interest in this guideline. By clicking here, you are letting us know you would like us to develop this guidance.  If you have specific questions or examples you would like included, please share them with us (click button below).  By sending us a note, we will also update you when more information is available.</p>
+            <center>
+            <a href="mailto:jvano @ucar.edu?subject=DOS AND DON'TS request on Data Interpretation guidelines, {{ page.ref }}&body=Please add your questions or examples here re: {{ page.dodont }}.  %0d%0d Thank you for your feedback!" class="btn btn-theme">submit your suggestions</a> </p>
+            <a href="{{ "/v1.0/" | prepend: site.baseurl }}" ><h4>Return to list of <b>DOS AND DON'TS</h4></b></a></h2>
+            </center>
+
+           <br><br>
+        </div>
+    
+    </div><! --/row -->
+</div><! --/container -->

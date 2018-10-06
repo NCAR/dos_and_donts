@@ -1,0 +1,99 @@
+---
+layout: default
+---
+
+{% include wrap.html %}    
+
+    {{ content }}
+
+<div class="container mtb">
+<a name="guidancetable" class="anchor"></a>
+    <h3><center> Earlier Guiding Documents </h3></center>
+    <p>&nbsp</p>
+    <img src="{{ "/assets/img/past_guidance_table.pdf" | prepend: site.baseurl }}" class="img-responsive" height="200%" width="200%">
+
+<p>The Table above is based on Table 1 in Vano et al. (<i>Climate Services</i>, 2018) and referred to as Table 1 throughout this site.  Complete citations are included in references below.
+</div><! --/container -->
+
+
+<div class="container mtb">
+<a name="uncertainities" class="anchor"></a>
+    <h3><center> Key Uncertainties </h3></center>
+     <div class="row">
+     <div class="col-sm-offset-2 col-md-offset-3 col-lg-offset-4">
+    <p>1. Human choices: future emissions </p>
+    <p>2. Physical process representations: global climate system response</p>
+    <p>3. Natural variability: realizations of the global climate system</p>
+    <p>4. Physical process representations: spanning space and time </p>
+    <p>5. Physical process representations: local hydrology</p>
+    <p>6. Human choices: managed systems</p>
+    <p><b>Details on each uncertainty will be included in version 2.0...</b> </p>
+     </div>
+     </div>     
+</div><! --/container -->
+
+
+<div class="container mtb">
+<a name="references" class="anchor"></a>
+    <div class="row">
+    <h3><center> References </h3></center>
+    <p> Below are key references used in constructing the DOS AND DON'TS.  They are arranged by date to elevate the most recent work. The complete alphabetical list of references for Version 1.0 can be found <a href="{{ "/assets/img/foundations/dos_and_donts_version1.0_references.pdf" | prepend: site.baseurl }}" target="_blank"> HERE</a>.</p>
+
+
+    {% if site.tags.papers2020 %} <p><b>2020</b></p> {% endif %}
+    {% assign posts = site.tags.papers2020 %}
+    {% include citationpaper.html %}
+
+    {% if site.tags.papers2019 %} <p><b>2019</b></p> {% endif %}
+    {% assign posts = site.tags.papers2019 %}
+    {% include citationpaper.html %}
+
+    {% if site.tags.papers2018 %} <p><b>2018</b></p> {% endif %}
+    {% assign posts = site.tags.papers2018 %}
+    {% include citationpaper.html %}
+
+    {% if site.tags.papers2017 %} <p><b>2017</b></p> {% endif %}
+    {% assign posts = site.tags.papers2017 %}
+    {% include citationpaper.html %}
+
+    {% if site.tags.papers2016 %} <p><b>2016</b></p> {% endif %}
+    {% assign posts = site.tags.papers2016 %}
+    {% include citationpaper.html %}
+
+    {% if site.tags.papers2015 %} <p><b>2015</b></p> {% endif %}
+    {% assign posts = site.tags.papers2015 %}
+    {% include citationpaper.html %}
+
+    {% if site.tags.papers2014 %} <p><b>2014</b></p> {% endif %}
+    {% assign posts = site.tags.papers2014 %}
+    {% include citationpaper.html %}
+
+    {% if site.tags.papers2013 %} <p><b>2013</b></p> {% endif %}
+    {% assign posts = site.tags.papers2013 %}
+    {% include citationpaper.html %}
+
+    {% if site.tags.papers2012 %} <p><b>2012</b></p> {% endif %}
+    {% assign posts = site.tags.papers2012 %}
+    {% include citationpaper.html %}
+
+    {% if site.tags.papers2011 %} <p><b>2011</b></p> {% endif %}
+    {% assign posts = site.tags.papers2011 %}
+    {% include citationpaper.html %}
+
+    {% if site.tags.papers2010 %} <p><b>2010</b></p> {% endif %}
+    {% assign posts = site.tags.papers2010 %}
+    {% include citationpaper.html %}
+
+    {% if site.tags.papers2009 %} <p><b>2009</b></p> {% endif %}
+    {% assign posts = site.tags.papers2009 %}
+    {% include citationpaper.html %}
+
+    {% if site.tags.papers2003 %} <p><b>2003</b></p> {% endif %}
+    {% assign posts = site.tags.papers2003 %}
+    {% include citationpaper.html %}
+
+
+    </div>
+</div><! --/container -->
+
+{% include sponsors.html %}
